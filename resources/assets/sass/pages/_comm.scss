@@ -1,0 +1,149 @@
+
+.community-group {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.list-group-item > .label {
+  margin-right: 1em;
+}
+
+.CommunityLink > form {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.col-md-4 {
+  border-radius: 5px;
+  background: #f9f1dc;
+  max-width: 35%;
+  margin-top: 20px;
+}
+
+.col-md-8 {
+  background: #003434;
+  border: 1px solid white;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.usr:link {
+  color: black;
+}
+
+.usr:hover {
+  color: black;
+  border: none;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .label {
+    color: white;
+  }
+
+  .community-group {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .list-group-item > .label {
+    margin-right: 1em;
+  }
+
+  .CommunityLink > form {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  .col-md-4 {
+    border-radius: 5px;
+    background: #f9f1dc;
+    max-width: 35%;
+    margin-top: 20px;
+  }
+
+  .col-md-8 {
+    background: #003434;
+    border: 1px solid white;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+
+ }
+
+
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+
+
+  .community-group {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .list-group-item > .label {
+    margin-right: 1em;
+  }
+
+  .CommunityLink > form {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  .col-md-4 {
+    border-radius: 5px;
+    background: #f9f1dc;
+    max-width: 35%;
+    margin-top: 20px;
+  }
+
+  .col-md-8 {
+    background: #003434;
+    border: 1px solid white;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+}
+
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+
+
+  .list-group-item > .label {
+    margin-right: 1em;
+  }
+
+  .CommunityLink > form {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  .col-md-8 {
+    background: #003434;
+    border: 1px solid white;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    }
+
+  .col-md-4 {
+    border-radius: 5px;
+    background: #f9f1dc;
+    max-width: 90%;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+
+

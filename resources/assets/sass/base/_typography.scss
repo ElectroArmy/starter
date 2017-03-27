@@ -1,0 +1,989 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic");
+
+$lato: 'Lato','Helvetica Neue', Arial, sans-serif;
+$lato-bold: 'Lato Bold', 'Helvetica Neue', Arial, sans-serif;
+$montserrat: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+$fira: 'FiraSansSemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fira-light: 'FiraSans Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+/* Global Headings */
+h1 {
+  font-family: $lato;
+  font-size: 2em;
+  color: #f9f1dc;
+ }
+
+h2 {
+  font-family: $lato;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 39px;
+}
+
+h3 {
+  font-family: $lato;
+  font-weight: 500;
+  font-size: 1.17em;
+  text-transform: uppercase;
+  color: #003434;
+}
+
+h4 {
+  font-family: $lato;
+  font-weight: 700;
+  font-size: 1.12em;
+  color: black;
+  padding-bottom: 10px;
+}
+
+h5 {
+  font-family: $lato;
+  font-weight: 700;
+  font-size: 1.12em;
+  line-height: 26px;
+  color: #f9f1dc;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-family: $lato;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #f9f1dc;
+  }
+
+p {
+  font-family: $lato;
+  font-size: 12px;
+  line-height: 18px;
+  color: #f9f1dc;
+}
+
+/* Global Links */
+a:hover {
+  color: white;
+  border-bottom: 4px solid #C0C0C0  !important;
+  text-decoration: none !important;
+}
+
+a:active {
+  color: white;
+}
+
+a:focus {
+  color: #f9f1dc;
+}
+
+/* Customised Titles */
+.form--title {
+  font-family: $fira;
+  font-size: 30px;
+  line-height: 43px;
+  font-weight: 300;
+  color: black;
+  text-transform: uppercase;
+}
+
+.show--title {
+  font-family: $fira;
+  font-size: 30px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #f9f1dc;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cart--title {
+  font-family: $fira;
+  font-size: 30px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #C0C0C0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.profile--title {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2em;
+  color: #f9f1dc;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.published--at {
+  font-family: $fira-light;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #f9f1dc;
+ }
+
+
+/* Product Index page */
+.show-heading a {
+  font-family: $lato-bold;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #f9f1dc;
+}
+
+.sidebar-title {
+  font-family: $lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #f9f1dc;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.sidebar-comments {
+  font-family: $lato;
+  font-weight: 300;
+  line-height: 19px;
+  font-size: 12px;
+  color: #f9f1dc;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.sidebar-body {
+  font-family: $lato;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f9f1dc;
+}
+
+.side-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.side-links li  {
+  padding-bottom: 10px;
+}
+
+.show--link {
+  font-family: $lato-bold;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #f9f1dc;
+  text-align: center;
+}
+
+.price {
+  font-family: $lato-bold;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f9f1dc;
+}
+.deal h3 {
+  font-family: $lato;
+  font-weight: 500;
+  padding-top: 20px;
+  font-size: 2.17em;
+  text-transform: uppercase;
+  color: #003434;
+}
+
+.offline {
+  font-family: $lato-bold;
+  font-weight: 300;
+  font-size: 14px;
+  color: #f9f1dc;
+  position: absolute;
+  left: 500px;
+}
+
+/* Product show page */
+.sub-heading {
+  font-family: $fira;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #f9f1dc;
+
+}
+
+.sub-heading a {
+  font-family: $fira;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #f9f1dc;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub-heading a:hover {
+  color: #E0E0E0;
+}
+
+.heading {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #f9f1dc;
+}
+
+.heading a {
+  color: #f9f1dc;
+}
+
+.heading a:hover {
+  color: #C0C0C0;
+}
+
+
+/* Posts pages */
+.heading {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #f9f1dc;
+}
+
+.heading a {
+  color: #f9f1dc;
+}
+
+.box-header {
+  font-family: $lato;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  color: black !important;
+}
+
+.featured-content a:hover {
+  color:  #808080;
+  text-decoration: none;
+}
+
+.tag-box li {
+  color: white;
+}
+
+.tag--centre {
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.previous {
+  padding-right: 200px;
+}
+
+.next {
+  padding-left: 200px;
+}
+
+.body {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f9f1dc;
+}
+
+/* Cart Index Page */
+.cart-heading {
+  font-family: $lato;
+  color: black;
+  text-align: left;
+}
+
+#td a {
+  color: black;
+}
+
+
+
+/* Community Page */
+
+.nav-tabs>li.active>a {
+  font-family: $fira;
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #555 !important;
+  cursor: default;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs li a {
+  font-family: $fira;
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 700;
+  color: grey;
+
+}
+
+.com--links a {
+  font-family: $fira;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-left: 15px;
+  color: #f9f1dc;
+}
+
+.panel-default {
+  background-color: #f9f1dc;
+  border: none;
+}
+
+/* Profile pages */
+.make-profile a {
+  font-family: $fira;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #f9f1dc;
+  text-align: center;
+}
+
+.make-profile a:hover {
+  font-family: $fira;
+  color: grey;
+}
+
+.profile--links a {
+  font-family: $fira;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #f9f1dc;
+}
+
+.profile--links a:hover {
+  font-family: $fira;
+  color: #f9f1dc;
+  text-decoration: none;
+
+}
+
+.bio--body {
+  font-family: $fira;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #f9f1dc;
+}
+
+/* Edit pages */
+.leader {
+  font-family: $lato-bold;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.control-label {
+  padding: 0;
+  margin: 0;
+  font-family: $fira;
+  color: #606060;
+  font-size: 14px !important;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+/* Iconography */
+.fa-long-arrow-left {
+  color: #f8f8f8;
+}
+
+.fa-long-arrow-right {
+  color: #f8f8f8;
+}
+
+.fa-tag {
+  color: #f8f8f8;
+}
+
+/* Thank you page */
+.farewell {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: black;
+}
+
+
+/* Chat page */
+.user-link {
+  font-family: $fira;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #003434;
+}
+
+.user-list a:hover {
+  color: #7A4012 !important;
+  border-bottom: 2px solid #C0C0C0  !important;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  /* Product  Index page */
+  .show-heading a {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f9f1dc;
+  }
+
+  .deal h3 {
+    font-family: $lato;
+    font-weight: 500;
+    padding-top: 20px;
+    font-size: 2.17em;
+    text-transform: uppercase;
+    color: #003434;
+  }
+
+  .side-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .side-links li  {
+    padding-bottom: 10px;
+  }
+
+  .show--link {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .offline {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    color: #f9f1dc;
+    position: absolute;
+    left: 500px;
+  }
+
+  .heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f9f1dc;
+  }
+
+  .heading a {
+    color: #f9f1dc;
+  }
+
+  .heading a:hover {
+    color: #C0C0C0;
+  }
+
+
+  /* Cart Index Page */
+  .cart-heading {
+    font-family: $lato;
+    color: black;
+    text-align: left;
+  }
+
+  #td a {
+    color: black;
+  }
+
+
+  /* Edit pages */
+  .leader {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: $lato;
+    color: #606060;
+    font-size: 14px !important;
+    text-transform: uppercase;
+  }
+
+
+  /* Posts pages */
+  .heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f9f1dc;
+  }
+
+  .heading a {
+    color: #f9f1dc;
+  }
+
+  .box-header {
+    font-family: $lato;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    color: black;
+  }
+
+  .featured-content a:hover {
+    color:  #808080;
+    text-decoration: none;
+  }
+
+  .tag-box li {
+    color: white;
+  }
+
+  .tag--centre {
+    padding-left: 30px;
+    text-decoration: none;
+  }
+
+  .previous {
+    padding-right: 200px;
+  }
+
+  .next {
+    padding-left: 200px;
+  }
+
+  .body {
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #f9f1dc;
+  }
+
+  .com--links a {
+    font-family: $fira;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: #f9f1dc;
+  }
+
+/* Community Pages */
+  .nav-tabs>li.active>a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #555 !important;
+    cursor: default;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+  }
+
+  .nav-tabs li a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: grey;
+
+  }
+
+  .com--links a {
+    font-family: $fira;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: #f9f1dc;
+  }
+
+ .panel-default {
+    background-color: #f9f1dc;
+    border: none;
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  /* Product Index page */
+  .product-heading a {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f9f1dc;
+  }
+
+  .deal h3 {
+    font-family: $lato;
+    font-weight: 500;
+    padding-top: 20px;
+    font-size: 2.17em;
+    text-transform: uppercase;
+    color: #003434;
+  }
+
+  .side-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .side-links li  {
+    padding-bottom: 10px;
+  }
+
+  .show--link {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .offline {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    color: #f9f1dc;
+    position: absolute;
+    left: 500px;
+  }
+
+  .heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f9f1dc;
+  }
+
+
+  .heading a {
+    color: #f9f1dc;
+  }
+
+  .heading a:hover {
+    color: #C0C0C0;
+  }
+
+  .leader {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: $lato;
+    color: #606060;
+    font-size: 14px !important;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  /* Posts pages */
+  .box-header {
+    font-family: $lato;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    color: black;
+  }
+
+  .featured-content a:hover {
+    color:  #808080;
+    text-decoration: none;
+  }
+
+  .tag-box li {
+    color: white;
+  }
+
+  .tag--centre {
+    padding-left: 30px;
+    text-decoration: none;
+  }
+
+  .previous {
+    padding-right: 200px;
+  }
+
+  .next {
+    padding-left: 200px;
+  }
+
+  /* Community Pages */
+  .nav-tabs>li.active>a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #555 !important;
+    cursor: default;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+  }
+
+  .nav-tabs li a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: grey;
+
+  }
+
+  .com--links a {
+    font-family: $fira;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: #f9f1dc;
+  }
+
+  .panel-default {
+    background-color: #f9f1dc;
+    border: none;
+  }
+
+  .com--links a {
+    font-family: $fira;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: #f9f1dc;
+  }
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+
+  h1 {
+    font-family: $montserrat;
+    font-size: 2em;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: $montserrat;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 39px;
+
+  }
+
+  h3 {
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 1.17em;
+    text-transform: uppercase;
+    color: #003434;
+  }
+
+  h4 {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 1.12em;
+    color: black;
+    padding-bottom: 10px;
+  }
+
+  h5 {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 1.12em;
+    line-height: 26px;
+    color: #f9f1dc;
+    margin: 0;
+    padding: 0;
+  }
+
+  h6 {
+    font-family: $montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #f9f1dc;
+  }
+
+
+  p {
+    font-family: $montserrat;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Customised Titles */
+  .show--link {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .form--title {
+    font-family: $montserrat;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .published--at {
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .heading {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f9f1dc;
+  }
+
+  .heading a {
+    color: #f9f1dc;
+  }
+
+  .heading a:hover {
+    color: #C0C0C0;
+  }
+
+  .price {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    color: #f9f1dc;
+  }
+
+  .leader {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: $montserrat;
+    color: #606060;
+    font-size: 14px !important;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+
+  /* Community Page */
+
+  .nav-tabs>li.active>a {
+    font-family: $montserrat;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #555 !important;
+    cursor: default;
+    border: none;
+  }
+
+  .nav-tabs li a {
+    font-family: $montserrat;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: grey;
+  }
+
+  .nav-tabs a:active {
+    font-family: $montserrat;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    border: none !important;
+    color: #A9A9A9;
+    text-decoration: none !important;
+  }
+
+  .nav-tabs a:hover {
+    font-family: $montserrat;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    border: none !important;
+    color: grey;
+    text-decoration: none !important;
+  }
+
+  .com--links a {
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: #f9f1dc;
+  }
+
+  .com--links a:hover {
+    border: none !important;
+    color: #F9F1DC;
+    text-decoration: none !important;
+  }
+
+}

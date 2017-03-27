@@ -1,0 +1,160 @@
+.has-columns {
+  column-count: 3;
+  column-rule: 1px solid #e3e3e3;
+  column-gap: 350px;
+  text-align: center;
+}
+
+.letter-group {
+  margin: 2em 0 4em;
+}
+
+.letter-group:first-child {
+  margin-top: 0;
+}
+
+.letter-group:last-child {
+  margin-bottom: 0;
+}
+
+.letter-group .letter {
+  background-color: #F9F1DC;
+  color: black;
+  text-transform: uppercase;
+ }
+
+.title {
+  color: #F9F1DC;
+}
+.title a {
+  color: #F9F1DC;
+}
+.letter-group ul {
+  list-style: none;
+}
+
+.subtitle {
+  color: #F9F1DC;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .has-columns {
+    column-count: 3;
+    column-rule: 1px solid #e3e3e3;
+    column-gap: 350px;
+    text-align: center;
+  }
+
+  .letter-group {
+    margin: 2em 0 4em;
+  }
+
+
+  .letter-group:first-child {
+    margin-top: 0;
+  }
+
+  .letter-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .letter-group .letter {
+    background-color: #F9F1DC;
+    color: black;
+    text-transform: uppercase;
+   }
+
+  .title {
+    color: #F9F1DC;
+  }
+  .title a {
+    color: #F9F1DC;
+  }
+  .letter-group ul {
+    list-style: none;
+  }
+
+  .subtitle {
+    color: #F9F1DC;
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .has-columns {
+    column-count: 2;
+    column-rule: 1px solid #e3e3e3;
+    column-gap: 250px;
+    text-align: center;
+  }
+
+  .letter-group {
+    margin: 2em 0 4em;
+  }
+
+  .letter-group:first-child {
+    margin-top: 0;
+  }
+
+  .letter-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .letter-group .letter {
+    background-color: #F9F1DC;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .title {
+    color: #F9F1DC;
+  }
+
+  .title a {
+    color: #F9F1DC;
+  }
+
+  .letter-group ul {
+    list-style: none;
+  }
+
+  .subtitle {
+    color: #F9F1DC;
+  }
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .has-columns {
+    column-count: 0;
+    column-gap: 0;
+    column-count: 1;
+
+  }
+}

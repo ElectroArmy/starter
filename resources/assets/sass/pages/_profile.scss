@@ -1,0 +1,123 @@
+.no-profile {
+  min-height: 900px;
+  width: 100%;
+}
+
+.profile--body {
+  min-width: 75%;
+}
+
+.profile--links {
+  min-width: 40%;
+}
+
+.list-group {
+  padding-top: 20px;
+  width: 30%;
+}
+
+.activity-container {
+  min-height: 300px;
+  min-width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.message-container {
+  position: relative;
+  left: 350px;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .no-profile {
+    min-height: 900px;
+    width: 100%;
+  }
+
+  .profile--body {
+    min-width: 75%;
+  }
+
+  .profile--links {
+    min-width: 40%;
+  }
+
+  .list-group {
+    padding-top: 20px;
+    width: 30%;
+  }
+
+  .activity-container {
+    min-height: 300px;
+    min-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .message-container {
+    position: relative;
+    left: 350px;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .no-profile {
+    min-height: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .profile--body {
+    min-width: 75%;
+  }
+
+  .profile--links {
+    min-width: 40%;
+  }
+
+  .list-group {
+    padding-top: 20px;
+    width: 30%;
+  }
+
+  .activity-container {
+    min-height: 300px;
+    min-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .no-profile {
+    min-height: 900px;
+    width: 100%;
+    background-color: #003434;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .profile-container {
+    background-color: #003434;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .list-group {
+    width: 50%;
+    padding-top: 20px;
+   }
+}

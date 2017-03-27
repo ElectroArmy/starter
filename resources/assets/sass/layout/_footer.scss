@@ -1,0 +1,136 @@
+$fira-sans: 'FiraSansSemiBold',"Helvetica Neue",Helvetica,Arial,sans-serif;
+$montserrat: Montserrat, Helvetica, Arial, sans-serif;
+
+
+footer {
+  padding: 50px 0;
+  background-color: #003434;
+}
+
+.middle-logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.foot-links {
+  color: #F9F1DC;
+  font-family: $fira-sans;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.foot-links:hover {
+  color: #F9F1DC;
+  text-decoration: none;
+  border-bottom: 2px solid #F9F1DC;
+}
+
+a[disabled], a[disabled]:hover {
+  pointer-events: none;
+  color: #e1e1e1;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  footer {
+    padding: 50px 0;
+    background-color: #003434;
+  }
+
+  .middle-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .foot-links {
+    color: #F9F1DC;
+    font-family: $fira-sans;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .foot-links:hover {
+    color: #F9F1DC;
+    text-decoration: none;
+    border-bottom: 2px solid #F9F1DC;
+  }
+
+  a[disabled], a[disabled]:hover {
+    pointer-events: none;
+    color: #e1e1e1;
+  }
+
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  footer {
+    padding: 50px 0;
+    background-color: #003434;
+  }
+
+  .middle-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .foot-links {
+    color: #F9F1DC;
+    font-family: $fira-sans;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .foot-links:hover {
+    color: #F9F1DC;
+    text-decoration: none;
+    border-bottom: 2px solid #F9F1DC;
+  }
+
+  a[disabled], a[disabled]:hover {
+    pointer-events: none;
+    color: #e1e1e1;
+  }
+
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  footer {
+    padding: 20px 20px;
+    background-color: #003434;
+  }
+
+  .foot-links {
+    color: #F9F1DC;
+    font-family: $montserrat;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .foot-links:hover {
+    color: #F9F1DC;
+    text-decoration: none;
+    border-bottom: 2px solid #F9F1DC;
+  }
+
+  p.copyright {
+    color: #F9F1DC;
+    font-family: $montserrat;
+    font-size: 10px;
+    margin: 15px 0 0;
+
+  }
+
+  .closed-link {
+    pointer-events: none;
+  }
+}
+

@@ -1,0 +1,207 @@
+.billing-container {
+  min-height: 500px;
+  width: 150%;
+  background-color:  #F8F8F8;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.shipping-container {
+  min-height: 500px;
+  width: 150%;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  padding-top: 5px;
+  margin-top: 50px;
+
+}
+
+.expiration {
+  min-height: 300px;
+  width: 100%;
+  background-color: #F8F8F8;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+.col-xl {
+  width: 100%;
+}
+
+.col-xs {
+  width: 55%;
+}
+
+.col-xs-p {
+  width: 20%;
+}
+
+.col-xb {
+  width: 80%;
+}
+
+.col-xb-c {
+  width: 100%;
+  }
+
+#cart-links  {
+    color: black;
+  }
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .billing-container {
+    min-height: 500px;
+    width: 150%;
+    background-color:  #F8F8F8;
+    border-radius: 5px;
+    padding-top: 5px;
+  }
+
+  .shipping-container {
+    min-height: 500px;
+    width: 150%;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 50px;
+
+  }
+
+  .expiration {
+    min-height: 300px;
+    width: 100%;
+    background-color: #F8F8F8;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+
+  .col-xl {
+    width: 100%;
+  }
+
+  .col-xs {
+    width: 55%;
+  }
+
+  .col-xs-p {
+    width: 20%;
+  }
+
+  .col-xb {
+    width: 80%;
+  }
+
+  .col-xb-c {
+    width: 100%;
+  }
+
+  #cart-links  {
+    color: black;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .billing-container {
+    min-height: 500px;
+    width: 150%;
+    background-color:  #F8F8F8;
+    border-radius: 5px;
+    padding-top: 5px;
+    flex: 0 0 50%;
+  }
+
+  .shipping-container {
+    min-height: 500px;
+    width: 150%;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 50px;
+    flex: 0 0 50%;
+
+  }
+
+  .expiration {
+    min-height: 300px;
+    width: 100%;
+    background-color: #F8F8F8;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+
+  .col-xl {
+    width: 100%;
+  }
+
+  .col-xs {
+    width: 55%;
+  }
+
+  .col-xs-p {
+    width: 20%;
+  }
+
+  .col-xb {
+    width: 80%;
+  }
+
+  .col-xb-c {
+    width: 100%;
+  }
+
+  #cart-links  {
+    color: black;
+  }
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .billing-container {
+    min-height: 400px;
+    width: 100%;
+    background-color:  #F8F8F8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shipping-container {
+    min-height: 500px;
+    width: 100%;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expiration {
+    min-height: 300px;
+    width: 100%;
+    background-color: #F8F8F8;
+    margin-left: 15px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-details {
+    padding-bottom: 20px;
+  }
+
+
+
+
+}

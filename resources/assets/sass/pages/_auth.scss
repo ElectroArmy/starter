@@ -1,0 +1,322 @@
+
+.login-fluid {
+  min-height: 550px;
+  overflow-y: hidden; /* don't show content that exceeds my height */
+  padding-top: 50px;
+  background-color: white;
+  box-shadow: 0 8px 6px -6px white;
+  flex: 0 0 400px;
+}
+
+.register-fluid {
+  min-height: 850px;
+  overflow-y: hidden; /* don't show content that exceeds my height */
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 8px 6px -6px white;
+  flex: 0 0 50%;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.form-control {
+  background-color: #F8F8F8;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.form-group ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.past {
+  width: 90px;
+  text-align: left !important;
+}
+
+#name {
+  width: 400px;
+}
+
+#username {
+  width: 400px;
+}
+
+#email {
+  width: 400px;
+}
+
+.input-append  {
+  width: 400px;
+}
+
+label {
+  color: black;
+}
+
+#check {
+  margin-left: 40px;
+}
+
+.social-container {
+  height: 80px;
+  width: 200px;
+  position: relative;
+  left: 90px;
+}
+
+.social-container ul {
+  list-style: none;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social__Icon li a:hover {
+  border: none  !important;
+  text-decoration: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1381px)
+{
+
+  .login-fluid {
+    min-height: 550px;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    padding-top: 50px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    flex: 0 0 400px;
+  }
+
+  .register-fluid {
+    min-height: 850px;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    flex: 0 0 50%;
+  }
+
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .form-control {
+    background-color: #F8F8F8;
+    margin-bottom: 10px;
+  }
+
+  .form-group {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  .form-group ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .past {
+    width: 90px;
+    text-align: left !important;
+  }
+
+  #name {
+    width: 400px;
+  }
+
+  #username {
+    width: 400px;
+  }
+
+  #email {
+    width: 400px;
+  }
+
+  .input-append  {
+    width: 400px;
+  }
+
+  label {
+    color: black;
+  }
+
+  #check {
+    margin-left: 40px;
+  }
+
+  .social-container {
+    height: 80px;
+    width: 200px;
+    position: relative;
+    left: 90px;
+  }
+
+  .social-container ul {
+    list-style: none;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .social__Icon li a:hover {
+    border: none  !important;
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+
+
+  .login-fluid {
+    min-height: 550px;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    padding-top: 50px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    flex: 0 1 85%;
+  }
+
+  .register-fluid {
+    min-height: 850px;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    flex: 0 1 85%;
+  }
+
+  .row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  #check {
+    margin-left: 40px;
+  }
+
+  .social__Icon li a:hover {
+    border: none  !important;
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .big-container {
+    background-color: white;
+    min-height: 1000px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .login-fluid {
+    height: 550px;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    padding-top: 50px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    //flex: 0 1 85%;
+  }
+
+  .register-fluid {
+    height: 850px;
+    width: 100%;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    //flex: 0 0 50%;
+  }
+
+  .header {
+    text-align: center;
+   }
+
+  #email {
+    width: 100%;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #username {
+    width: 100%;
+  }
+
+  .social-container {
+    height: 80px;
+    width: 200px;
+    position: relative;
+    left: 100px;
+  }
+
+  .input-append {
+    width: 100%;
+  }
+
+
+
+  .social__Icon li a:hover {
+    border: none  !important;
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0;
+  }
+}

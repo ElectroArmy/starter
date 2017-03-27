@@ -1,0 +1,700 @@
+$lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
+
+
+.btn-default,
+.btn-default:active,
+.btn-default:visited,
+.btn-default:focus {
+  background-color: #B8B8B8;
+  border:0;
+  outline: 0;
+  padding: 10px 15px;
+  color: white;
+  font-family: $lato;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.btn-default:hover {
+  background-color: #D8B98B;
+  color: #f8f8f8;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none !important;
+}
+
+.btn-default a {
+  color: #f8f8f8;
+  text-decoration: none;
+  border: none !important;
+  }
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #003434;
+  outline: 0;
+  border: 0;
+  padding: 10px 15px;
+  color: white;
+  font-family: $lato;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #808080 !important;
+  color: whitesmoke !important;
+}
+
+.btn-tag  {
+  background-color: blue;
+  outline: 0;
+  border: 0;
+  color: white;
+  font-family: $lato;
+  font-size: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.btn-small,
+.btn-small:active,
+.btn-small:visited,
+.btn-small:focus {
+  background-color: #B8B8B8;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-family: $lato;
+  font-size: 14px;
+  height: 25px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn-small:hover {
+  background-color: #D8B98B;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.btn-danger,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus   {
+  background-color: #d9534f;
+  border: 0;
+  outline: 0;
+  padding: 10px 15px;
+  color: white;
+  font-family: $lato;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+  }
+
+.btn-danger:hover {
+  background-color: #AD2A1A;
+  color: white !important;
+}
+
+.btn-cart,
+.btn-cart:active,
+.btn-cart:visited,
+.btn-cart:focus {
+  background-color: #B8B8B8 !important;
+  color: white !important;
+  outline: 0;
+  border: 0;
+  padding: 1px 15px;
+  font-family: $lato;
+  font-size: 14px;
+  text-transform: capitalize;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.btn-cart:hover {
+  background-color: #107896 !important;
+  color: #f8f8f8 !important;
+  text-decoration: none;
+}
+
+.btn-link {
+  font-family: $lato;
+  outline: 0;
+  border: 0;
+  font-size: 12px;
+  color:  #003434 !important;
+  padding-left: 150px;
+}
+
+.btn-link:hover {
+  border: none !important;
+}
+
+.btn-message,
+.btn-message:active,
+.btn-message:visited,
+.btn-message:focus {
+  background-color: #003434;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-family: "Lato Regular", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  height: 35px;
+  width: 55px;
+  cursor: pointer;
+}
+
+.btn-message:hover {
+  background-color: #808080;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
+.button-group {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-centre {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-button {
+  padding: 10px;
+}
+
+.apple-pay-set-up-button {
+  display: inline-block;
+  -webkit-appearance: -apple-pay-button;
+  -apple-pay-button-type: set-up;
+}
+.apple-pay-set-up-button-black {
+  -apple-pay-button-style: black;
+}
+.apple-pay-set-up-button-white {
+  -apple-pay-button-style: white;
+}
+.apple-pay-setup-button-white-with-line {
+  -apple-pay-button-style: white-outline;
+}
+
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .btn-default,
+  .btn-default:active,
+  .btn-default:visited,
+  .btn-default:focus {
+    background-color: #B8B8B8;
+    border:0;
+    outline: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .btn-default:hover {
+    background-color: #D8B98B;
+    color: #f8f8f8;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none !important;
+  }
+
+  .btn-default a {
+    color: #f8f8f8;
+    text-decoration: none;
+    border: none !important;
+  }
+
+  .btn-primary {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+
+  .btn-tag {
+    background-color: blue;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-family: $lato;
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+
+  .btn-small {
+    background-color: #B8B8B8;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .btn-small:hover {
+    background-color: #D8B98B;
+    color: #f8f8f8;
+    text-decoration: none;
+  }
+
+  .btn-danger,
+  .btn-danger:active,
+  .btn-danger:visited,
+  .btn-danger:focus  {
+    background-color: #d9534f;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .btn-danger:hover {
+    background-color: #AD2A1A;
+    color: white !important;
+  }
+
+  .btn-cart,
+  .btn-cart:active,
+  .btn-cart:visited,
+  .btn-cart:focus {
+    background-color: #B8B8B8 !important;
+    color: white !important;
+    outline: 0;
+    border: 0;
+    padding: 1px 15px;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .btn-cart:hover {
+    background-color: #107896 !important;
+    color: #f8f8f8 !important;
+    text-decoration: none;
+  }
+
+  .btn-plan {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    color: #f8f8f8;
+    font-family: $lato;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .btn-plan:hover {
+    background-color: grey;
+    color: white;
+  }
+
+  .btn-link {
+    font-family: $lato;
+    outline: 0;
+    border: 0;
+    font-size: 12px;
+    color:  #003434 !important;
+    padding-left: 100px;
+  }
+
+  .btn-link:hover {
+    border: none !important;
+  }
+
+  .button-group {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .button-centre {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .social-button {
+    padding: 10px;
+  }
+
+  .apple-pay-set-up-button {
+    display: inline-block;
+    -webkit-appearance: -apple-pay-button;
+    -apple-pay-button-type: set-up;
+  }
+  .apple-pay-set-up-button-black {
+    -apple-pay-button-style: black;
+  }
+  .apple-pay-set-up-button-white {
+    -apple-pay-button-style: white;
+  }
+  .apple-pay-setup-button-white-with-line {
+    -apple-pay-button-style: white-outline;
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .btn-default,
+  .btn-default:active,
+  .btn-default:visited,
+  .btn-default:focus {
+    background-color: #B8B8B8;
+    border:0;
+    outline: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+  }
+
+  .btn-default:hover {
+    background-color: #D8B98B;
+    color: #f8f8f8;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none important;
+  }
+
+  .btn-default a {
+    color: #f8f8f8;
+    text-decoration: none;
+    border: none important;
+  }
+
+  .btn-primary {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+
+  .btn-tag {
+    background-color: blue;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-family: $lato;
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+
+  .btn-small {
+    background-color: #B8B8B8;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .btn-small:hover {
+    background-color: #D8B98B;
+    color: #f8f8f8;
+    text-decoration: none;
+  }
+
+  .btn-danger {
+    background-color: #d9534f;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+  }
+
+  .btn-danger:hover {
+    background-color: #AD2A1A;
+    color: white !important;
+  }
+
+  .btn-cart,
+  .btn-cart:active,
+  .btn-cart:visited,
+  .btn-cart:focus {
+    background-color: #B8B8B8 !important;
+    color: white !important;
+    outline: 0;
+    border: 0;
+    padding: 1px 15px;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .btn-cart:hover {
+    background-color: #107896 !important;
+    color: #f8f8f8 !important;
+    text-decoration: none;
+  }
+
+  .btn-link {
+    font-family: $lato;
+    outline: 0;
+    border: 0;
+    font-size: 12px;
+    color:  #003434 !important;
+    padding-left: 100px;
+  }
+
+  .btn-link:hover {
+    border: none !important;
+  }
+
+
+
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .btn-default,
+  .btn-default:active,
+  .btn-default:visited,
+  .btn-default:focus {
+    background-color: #B8B8B8;
+    border:0;
+    outline: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-default:hover {
+    background-color: #D8B98B;
+    color: #f8f8f8;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none !important;
+  }
+
+
+  .btn-primary {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+
+  .btn-tag {
+    background-color: blue;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-family: $lato;
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+
+  .btn-small {
+    background-color: #B8B8B8;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .btn-small:hover {
+    background-color: #D8B98B;
+    color: #f8f8f8;
+    text-decoration: none;
+  }
+
+  .btn-message,
+  .btn-message:active,
+  .btn-message:visited,
+  .btn-message:focus {
+    background-color: #003434;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: "Lato Regular", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    height: 35px;
+    width: 55px;
+    cursor: pointer;
+  }
+
+  .btn-message:hover {
+    background-color: #808080;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .btn-danger {
+    background-color: #d9534f;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-danger:hover {
+    background-color: #AD2A1A;
+    color: white !important;
+  }
+
+  .btn-cart,
+  .btn-cart:active,
+  .btn-cart:visited,
+  .btn-cart:focus {
+    background-color: #B8B8B8 !important;
+    color: white !important;
+    outline: 0;
+    border: 0;
+    padding: 1px 15px;
+    font-family: $lato;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .btn-cart:hover {
+    background-color: #107896 !important;
+    color: #f8f8f8 !important;
+    text-decoration: none;
+  }
+
+  .btn-link {
+    font-family: $lato;
+    outline: 0;
+    border: 0;
+    font-size: 12px;
+    color:  #003434 !important;
+    padding-bottom: 5px;
+  }
+
+  .btn-link:hover {
+    border: none !important;
+  }
+
+
+  .hamburger{
+    color: white;
+    }
+
+}

@@ -1,0 +1,409 @@
+$montserrat: Montserrat, Helvetica, Arial, sans-serif;
+$lato: 'Lato', "Helvetica Neue", Arial, sans-serif;
+
+.navigation {
+  background-color: #003434;
+  display: flex;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 50px;
+  margin-top: 10px;
+}
+
+
+.nav-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav-left a.home {
+  background-image: url(http://theblog/images/logo_medium.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  max-height: 60px;
+  width: 100px;
+}
+
+
+.nav-items {
+  background: #003434;
+  color: #F9F1DC;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: $lato;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #003434;
+  }
+
+.nav-items a:hover {
+  text-decoration: none !important;
+  border-bottom: 2px solid red;
+}
+
+.nav-right ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+.search-box {
+  background-color: #003434;
+  min-height: 30px;
+  margin-bottom: 10px;
+  color: #F9F1DC;
+}
+
+.fa-search {
+  color: white;
+  background-color: grey;
+  position:relative;
+  padding:6px 15px;
+  left: -45px;
+  bottom: 5px;
+  min-height: 23px;
+
+}
+
+#i-nav {
+  display: none;
+}
+
+
+.menu {
+  ul {
+    padding:0;
+    margin:0;
+    li {
+      display: inline-block;
+      float: left;
+      list-style: none;
+      padding: 0 0 0 5px;
+      margin: 0;
+    }
+  }
+}
+.menuIcon {
+  display: none;
+  background: #003434;
+  width: 100%;
+  text-align: center;
+  &:hover {
+    background: #003434;
+
+  }
+  a {
+    width: 100%;
+    display: inline-block;
+    color: #F9F1DC;
+    text-align: center;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .navigation {
+    display: flex;
+    background-color: #003434;
+  }
+
+  .logo {
+    max-width: 100%;
+    max-height: 50px;
+    margin-top: 10px;
+  }
+
+  .nav-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+   }
+
+  .nav-left a.home {
+    background-image: url(http://theblog/images/logo_medium.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    max-height: 60px;
+    width: 100px;
+  }
+
+
+
+  .nav-items {
+    background: #003434;
+    color: #F9F1DC;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: $lato;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-items a {
+  }
+
+  .nav-items a:hover {
+    border-bottom: 4px solid yellowgreen;
+
+  }
+
+  .nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .fa-search {
+    color: white;
+    background-color: grey;
+    position: relative;
+    padding: 6px 15px;
+    left: -45px;
+    bottom: 5px;
+    min-height: 23px;
+
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    padding: 20px 5px;
+  }
+
+  .search-box {
+    background-color: #003434;
+    min-height: 30px;
+    margin-bottom: 10px;
+    color: #F9F1DC;
+  }
+
+  #i-nav {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .navigation {
+    background-color: #003434;
+    display: flex;
+  }
+
+  .nav-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .nav-items {
+    background: #003434;
+    color: #F9F1DC;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    padding: 20px 5px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 2px solid #003434;
+    flex: 1 1 50%;
+  }
+
+  .nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .navigation {
+    display: flex;
+    background-color: #003434;
+    width: 100%;
+   }
+
+  .nav-left {
+    padding-left: 40px;
+  }
+
+  .nav-left ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-left li {
+    width: 100%;
+  }
+
+  .nav-items {
+    background: #003434;
+    color: #F9F1DC;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: $montserrat;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #003434;
+  }
+
+  .nav-items a:hover {
+    border-bottom: 1px solid grey;
+  }
+
+  .nav-right {
+    display: none;
+    }
+
+  .logo {
+    display: none;
+  }
+
+  .centered-logo {
+    display: none;
+    }
+
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    &.menuOpen {
+      max-height: 1000px;
+    }
+    ul {
+      li {
+        display: block;
+        width: 100%;
+        background: #003434;
+        &:hover {
+          background: #003434;
+          border: none !important;
+          text-decoration: none !important;
+        }
+        a {
+          color: #F9F1DC;
+          text-shadow: #003434 0px 1px 2px;
+          padding: 10px 0;
+          width: 100%;
+          border: none !important;
+        }
+        a:hover {
+          border: none !important;
+          color: #F9F1DC;
+          text-decoration: none !important;
+        }
+
+      }
+    }
+  }
+
+  .menuIcon {
+    display: inline-block;
+    background-color: #003434;
+   }
+
+  .menuIcon a:hover {
+    border: none !important;
+    color: #F9F1DC;
+    text-decoration: none !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hide {
+    display: inline-block !important;
+  }
+
+  .search-form {
+    padding-left: 100px;
+    margin: 0 !important;
+  }
+
+  .fa-search {
+    color: white;
+    background-color: grey;
+    position: relative;
+    padding: 6px 15px;
+    left: 105px;
+    bottom: 38px;
+    min-height: 23px;
+
+  }
+
+
+
+
+}
+
+
