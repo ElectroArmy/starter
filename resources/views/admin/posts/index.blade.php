@@ -11,8 +11,6 @@
                 <h1>The Station Blog  <small>the Latest</small></h1>
             </div><!-- /.heading -->
 
-
-
                 <div class="posts-container animated fadeInUp">
                     @forelse ($posts as $post)
                         @if($post->id == 1)

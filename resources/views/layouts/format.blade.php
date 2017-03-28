@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
     <!-- SweetAlert CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/libs.css"/>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/libs.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css"/>
     <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -53,7 +53,8 @@
 @include('partials.analyticstracking')
 @include('partials.footer')
 
-<script src="{{ asset('js/app.js') }}"></script>
+@yield('javascript')
+
 <script src="/js/jquery.js"></script>
 <!-- Scripts -->
 <script>
@@ -120,7 +121,6 @@
 
 <!-- Select js for tags -->
 @yield('footer_js')
-
 
 
 </body>

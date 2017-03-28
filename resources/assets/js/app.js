@@ -18,10 +18,12 @@ Vue.component('chat-message', require('./components/ChatMessage.vue'));
 Vue.component('chat-log', require('./components/ChatLog.vue'));
 Vue.component('chat-composer', require('./components/ChatComposer.vue'));
 
-Vue.component('alert', require('./components/Alert.vue'));
+//Vue.component('alert', require('./components/Alert.vue'));
 
 const app = new Vue({
+
     el: '#app',
+
     data: {
         messages: [],
         usersInRoom: []

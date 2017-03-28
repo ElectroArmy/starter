@@ -20,14 +20,7 @@
             <div class="right-container">
                 <div class="comment-box">
                     <h3 class="sidebar-title">Comments</h3>
-                        @if(isset($comments['root']))
-                                @include('admin.posts.comments.list', ['collection' => $comments['root']])
-
-                        @else
-                            <p class="sidebar-title">No Historical Comments Today</p>
-                            <h3 class="is--both-sides is--beige">Leave a Reply</h3>
-                                @include('admin.posts.comments.form')
-                        @endif
+                    <p class="sidebar-para">Please login to view comments</p>
                 </div>
                     <!-- /.comment-box -->
 

@@ -74,8 +74,6 @@
                                 <li><a href="/chat" class="nav-items hide">Chat</a></li>
                                 <li><a href="/contact" class="nav-items">Contact</a></li>
                                 <li><a href="/community" class="nav-items">Community</a></li>
-                                <li><a href="/admin/products" class="nav-items">Home</a></li>
-
                                 <li><a href="/admin/products" class="nav-items">Store</a></li>
                                 <li><a href="{{ route('profile', [Auth::user()->username])  }} " class="nav-items">Profile</a></li>
                                 <li><a href="/support" class="nav-items">Support</a></li>

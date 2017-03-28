@@ -55,14 +55,14 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-tag  {
-  background-color: blue;
+  background-color: #CCCFBC;
   outline: 0;
   border: 0;
   color: white;
   font-family: $lato;
   font-size: 10px;
   height: 30px;
-  width: 30px;
+  max-width: 50px;
   border-radius: 5px;
   margin-left: 5px;
 }
@@ -167,6 +167,28 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   text-decoration: none;
 }
 
+.btn-chat,
+.btn-chat:active,
+.btn-chat:visited,
+.btn-chat:focus {
+  background-color: #003434;
+  outline: 0;
+  border: 0;
+  padding: 10px 15px;
+  color: white;
+  font-family: "Lato Regular", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.btn-chat:hover {
+  background-color: #808080 !important;
+  color: whitesmoke !important;
+}
+
 
 .button-group {
   display: flex;
@@ -256,14 +278,14 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-tag {
-    background-color: blue;
+    background-color: #CCCFBC;
     outline: 0;
     border: 0;
     color: white;
     font-family: $lato;
     font-size: 10px;
     height: 30px;
-    width: 30px;
+    max-width: 50px;
     border-radius: 5px;
     margin-left: 5px;
   }
@@ -359,6 +381,29 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
     border: none !important;
   }
 
+  .btn-chat,
+  .btn-chat:active,
+  .btn-chat:visited,
+  .btn-chat:focus {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: "Lato Regular", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+  }
+
+  .btn-chat:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+
+
   .button-group {
     display: flex;
     align-content: center;
@@ -448,14 +493,14 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-tag {
-    background-color: blue;
+    background-color: #CCCFBC;
     outline: 0;
     border: 0;
     color: white;
     font-family: $lato;
     font-size: 10px;
     height: 30px;
-    width: 30px;
+    max-width: 50px;
     border-radius: 5px;
     margin-left: 5px;
   }
@@ -532,6 +577,29 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   .btn-link:hover {
     border: none !important;
   }
+
+  .btn-chat,
+  .btn-chat:active,
+  .btn-chat:visited,
+  .btn-chat:focus {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: "Lato Regular", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+  }
+
+  .btn-chat:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+
 
 
 
@@ -691,6 +759,29 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   .btn-link:hover {
     border: none !important;
   }
+
+  .btn-chat,
+  .btn-chat:active,
+  .btn-chat:visited,
+  .btn-chat:focus {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: "Lato Regular", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+  }
+
+  .btn-chat:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+
 
 
   .hamburger{

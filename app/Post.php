@@ -54,7 +54,7 @@ class Post extends Model
      *
      * @var array
      */
-    //protected static $recordEvents = ['created'];
+    protected static $recordEvents = ['created'];
 
     /**
      * Relationship
@@ -78,6 +78,55 @@ class Post extends Model
     public function tags()
     {
         return $this->belongsToMany('App\Tag')->withTimestamps();
+    }
+
+    /**
+     * Relationship
+     *
+     * A Post can have many comments.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
+
+    /**
+     * Load a threaded set of comments for the post.
+     *
+     * @return App\CommentsCollection
+     */
+    public function getThreadedComments()
+    {
+        return $this->comments()->with('owner')->get()->threaded();
+    }
+
+
+    /**
+     * Add a comment to the post.
+     *
+     * @param array $attributes
+     * @return Model
+     */
+    public function addComment($attributes)
+    {
+        $comment = (new Comment)->forceFill($attributes);
+        $comment->user_id = auth()->id();
+        return $this->comments()->save($comment);
+    }
+
+
+    /**
+     * Search for the latest comments.
+     *
+     * @return mixed
+     */
+    public  function latestComment()
+    {
+        return $this->hasOne(Comment::class)->latest();
+
     }
 
 

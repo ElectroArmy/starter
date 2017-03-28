@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Exceptions\TagNotFoundException;
 use App\Tag;
 
@@ -16,10 +15,10 @@ class TagsController extends Controller
      */
     public function index()
     {
+
         $tags = Tag::orderBy('name')->get()->groupBy(function ($tag) {
             return substr($tag->name, 0, 1);
         });
-        //return $tags;
 
         return view('tags.index', compact('tags'));
 
@@ -27,7 +26,7 @@ class TagsController extends Controller
 
 
     /**
-     * Show the article form to fetch the tags.
+     * Show the post form to fetch the tags.
      *
      * @param Tag $tag
      * @return \Illuminate\View\View
@@ -36,16 +35,17 @@ class TagsController extends Controller
     public function show($tag)
     {
         try
-        {
-            $posts = $tag->posts;
+            {
+                $posts = $tag->posts;
+                //$posts = Tag::has('posts')->get();
+                //dd($posts);
+                $index = 'Search Tags';
 
-            $index = 'Search Tags';
+            } catch (TagNotFoundException $e) {
 
-        } catch (TagNotFoundException $e) {
-
-            throw new TagNotFoundException($e->getMessage());
-        }
-        return view('tags.show', compact('posts', 'index', 'posts'));
+                throw new TagNotFoundException($e->getMessage());
+            }
+            return view('tags.show', compact('posts', 'index'));
     }
 
 }

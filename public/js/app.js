@@ -11565,10 +11565,12 @@ Vue.component('chat-message', __webpack_require__(50));
 Vue.component('chat-log', __webpack_require__(49));
 Vue.component('chat-composer', __webpack_require__(48));
 
-Vue.component('alert', __webpack_require__(47));
+//Vue.component('alert', require('./components/Alert.vue'));
 
 var app = new Vue({
+
     el: '#app',
+
     data: {
         messages: [],
         usersInRoom: []
@@ -12456,46 +12458,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 33 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-
-    props: ['type'],
-
-    data: function data() {
-        return {
-            isVisible: true
-        };
-    },
-    mounted: function mounted() {
-        console.log('Component ready.');
-    },
-
-
-    methods: {
-        hideModal: function hideModal() {
-            this.isVisible = false;
-        }
-    }
-
-});
-
-/***/ }),
+/* 33 */,
 /* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12670,9 +12633,8 @@ window.Pusher = __webpack_require__(46);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'pusher',
-  key: '99bbdd06bcb44a5f6af8'
-  //cluster: 'eu',
-  //encrypted: true
+  key: '99bbdd06bcb44a5f6af8',
+  encrypted: true
 });
 
 /***/ }),
@@ -15067,13 +15029,7 @@ exports = module.exports = __webpack_require__(2)();
 exports.push([module.i, "\n.chat-composer {\n     display: -webkit-box;\n     display: -ms-flexbox;\n     display: flex;\n}\n.chat-composer input {\n     -webkit-box-flex: 1;\n         -ms-flex: 1 auto;\n             flex: 1 auto;\n     padding: .5rem 1rem;\n}\n.chat-composer button {\n     border-radius: 0;\n}\n", ""]);
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)();
-exports.push([module.i, "\n.Alert {\n    padding: 10px;\n    position: relative;\n    min-width: 100%;\n    min-height: 50px;\n}\n.Alert--Info {\n    background: #e3e3e3;\n}\n.Alert--Success {\n    background: green;\n    color: white;\n}\n.Alert--Error {\n    background: red;\n    color: white;\n}\n\n\n\n\n", ""]);
-
-/***/ }),
+/* 41 */,
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37089,44 +37045,7 @@ return /******/ (function(modules) { // webpackBootstrap
 ;
 
 /***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(58)
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(33),
-  /* template */
-  __webpack_require__(53),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/yameste/Sites/gamechat/resources/assets/js/components/Alert.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Alert.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4d8bf2a4", Component.options)
-  } else {
-    hotAPI.reload("data-v-4d8bf2a4", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
+/* 47 */,
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37307,7 +37226,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary",
+    staticClass: "btn btn-chat",
     on: {
       "click": _vm.sendMessage
     }
@@ -37322,36 +37241,7 @@ if (false) {
 }
 
 /***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.isVisible),
-      expression: "isVisible"
-    }],
-    staticClass: "Alert Alert--Success"
-  }, [_vm._v("\n    You are now signed in!\n    "), _c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.hideModal
-    }
-  }, [_vm._v("x")])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-4d8bf2a4", module.exports)
-  }
-}
-
-/***/ }),
+/* 53 */,
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37416,7 +37306,11 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('p', [_vm._v(_vm._s(_vm.message.message))]), _vm._v(" "), _c('small', [_vm._v(_vm._s(_vm.message.user.name))])])
+  return _c('div', [_c('p', {
+    staticClass: "is--black"
+  }, [_vm._v(_vm._s(_vm.message.message))]), _vm._v(" "), _c('small', {
+    staticClass: "is--black"
+  }, [_vm._v(_vm._s(_vm.message.user.name))])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -37453,32 +37347,7 @@ if(false) {
 }
 
 /***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(41);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(4)("4e627d36", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4d8bf2a4!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4d8bf2a4!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 58 */,
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 

@@ -16,7 +16,7 @@
                 </div><!-- /.header -->
 
                 <div class="row">
-                    {!! Form::model($user->profile, ['method' => 'PATCH', 'route' => ['dashboard.update', $user->username]]) !!}
+                    {!! Form::model($user->profile, ['method' => 'PATCH', 'route' => ['profile.update', $user->username]]) !!}
 
                     {{-- Address --}}
                     <div class="form-group form-group-lg">

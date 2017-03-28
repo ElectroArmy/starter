@@ -61,7 +61,7 @@ p {
   color: #f9f1dc;
 }
 
-/* Global Links */
+
 a:hover {
   color: white;
   border-bottom: 4px solid #C0C0C0  !important;
@@ -76,7 +76,7 @@ a:focus {
   color: #f9f1dc;
 }
 
-/* Customised Titles */
+/* All Form pages */
 .form--title {
   font-family: $fira;
   font-size: 30px;
@@ -86,16 +86,7 @@ a:focus {
   text-transform: uppercase;
 }
 
-.show--title {
-  font-family: $fira;
-  font-size: 30px;
-  line-height: 43px;
-  font-weight: 700;
-  color: #f9f1dc;
-  text-transform: uppercase;
-  text-align: center;
-}
-
+/* Shopping Cart Pages */
 .cart--title {
   font-family: $fira;
   font-size: 30px;
@@ -106,14 +97,18 @@ a:focus {
   text-align: center;
 }
 
-.profile--title {
-  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
-  font-size: 2em;
-  color: #f9f1dc;
-  text-align: center;
-  padding-left: 50px;
+.cart-heading {
+  font-family: $lato;
+  color: black;
+  text-align: left;
 }
 
+#td a {
+  color: black;
+}
+/* End of Shopping Cart Pages */
+
+/* Posts Show Page */
 .published--at {
   font-family: $fira-light;
   font-size: 12px;
@@ -123,16 +118,6 @@ a:focus {
   color: #f9f1dc;
  }
 
-
-/* Product Index page */
-.show-heading a {
-  font-family: $lato-bold;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-  color: #f9f1dc;
-}
-
 .sidebar-title {
   font-family: $lato;
   font-weight: 700;
@@ -140,7 +125,16 @@ a:focus {
   line-height: 21px;
   color: #f9f1dc;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
+}
+
+.sidebar-para {
+  font-family: $lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #f9f1dc;
+  text-decoration: none;
 }
 
 .sidebar-comments {
@@ -170,9 +164,77 @@ a:focus {
   padding-bottom: 10px;
 }
 
-.show--link {
+.tag-box li {
+  color: white;
+}
+
+.tag--centre {
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.tag--centre a:hover {
+  border-bottom: none  !important;
+  text-decoration: none !important;
+}
+
+.previous {
+  padding-right: 200px;
+}
+
+.next {
+  padding-left: 200px;
+}
+
+.body {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f9f1dc;
+}
+/* End of Posts Show Pages */
+
+/* Posts Index Page */
+.heading {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #f9f1dc;
+}
+
+.heading a {
+  color: #f9f1dc;
+}
+
+.box-header {
+  font-family: $lato;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  color: black !important;
+}
+
+.featured-content a:hover {
+  color:  #808080;
+  text-decoration: none;
+}
+
+/* Product show page */
+.show-heading a {
   font-family: $lato-bold;
   font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #f9f1dc;
+}
+
+
+
+/* Product index page */
+.show--link {
+  font-family: $lato-bold;
+  font-weight: 300;
   font-size: 14px;
   text-decoration: none;
   color: #f9f1dc;
@@ -185,6 +247,7 @@ a:focus {
   font-size: 14px;
   color: #f9f1dc;
 }
+
 .deal h3 {
   font-family: $lato;
   font-weight: 500;
@@ -202,16 +265,16 @@ a:focus {
   position: absolute;
   left: 500px;
 }
+/* End of Product Index Page */
 
-/* Product show page */
+/* Products show page */
 .sub-heading {
   font-family: $fira;
   font-size: 12px;
   line-height: 26px;
   font-weight: 500;
   color: #f9f1dc;
-
-}
+  }
 
 .sub-heading a {
   font-family: $fira;
@@ -242,73 +305,9 @@ a:focus {
 .heading a:hover {
   color: #C0C0C0;
 }
-
-
-/* Posts pages */
-.heading {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  color: #f9f1dc;
-}
-
-.heading a {
-  color: #f9f1dc;
-}
-
-.box-header {
-  font-family: $lato;
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 600;
-  color: black !important;
-}
-
-.featured-content a:hover {
-  color:  #808080;
-  text-decoration: none;
-}
-
-.tag-box li {
-  color: white;
-}
-
-.tag--centre {
-  padding-left: 30px;
-  text-decoration: none;
-}
-
-.previous {
-  padding-right: 200px;
-}
-
-.next {
-  padding-left: 200px;
-}
-
-.body {
-  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  color: #f9f1dc;
-}
-
-/* Cart Index Page */
-.cart-heading {
-  font-family: $lato;
-  color: black;
-  text-align: left;
-}
-
-#td a {
-  color: black;
-}
-
-
+/* End of Products Show Page */
 
 /* Community Page */
-
 .nav-tabs>li.active>a {
   font-family: $fira;
   font-size: 12px;
@@ -362,7 +361,7 @@ a:focus {
   font-family: $fira;
   font-size: 15px;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: 300;
   color: #f9f1dc;
 }
 
@@ -381,7 +380,7 @@ a:focus {
   color: #f9f1dc;
 }
 
-/* Edit pages */
+/*  All Form pages */
 .leader {
   font-family: $lato-bold;
   font-weight: 700;
@@ -438,26 +437,88 @@ a:focus {
   color: #7A4012 !important;
   border-bottom: 2px solid #C0C0C0  !important;
 }
+/* End of Chat page */
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
-  /* Product  Index page */
-  .show-heading a {
-    font-family: $lato-bold;
+
+  /* All Form pages */
+  .form--title {
+    font-family: $fira;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  /* Shopping Cart Pages */
+  .cart--title {
+    font-family: $fira;
+    font-size: 30px;
+    line-height: 43px;
     font-weight: 700;
-    font-size: 14px;
-    text-decoration: none;
+    color: #C0C0C0;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .cart-heading {
+    font-family: $lato;
+    color: black;
+    text-align: left;
+  }
+
+  #td a {
+    color: black;
+  }
+  /* End of Shopping Cart Pages */
+
+  /* Posts Show Page */
+  .published--at {
+    font-family: $fira-light;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
     color: #f9f1dc;
   }
 
-  .deal h3 {
+  .sidebar-title {
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #f9f1dc;
+    text-decoration: none;
+    text-transform: none;
+  }
+
+  .sidebar-para {
+    font-family: $lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #f9f1dc;
+    text-decoration: none;
+  }
+
+  .sidebar-comments {
+    font-family: $lato;
+    font-weight: 300;
+    line-height: 19px;
+    font-size: 12px;
+    color: #f9f1dc;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .sidebar-body {
     font-family: $lato;
     font-weight: 500;
-    padding-top: 20px;
-    font-size: 2.17em;
-    text-transform: uppercase;
-    color: #003434;
+    font-size: 12px;
+    color: #f9f1dc;
   }
 
   .side-links {
@@ -470,99 +531,6 @@ a:focus {
     padding-bottom: 10px;
   }
 
-  .show--link {
-    font-family: $lato-bold;
-    font-weight: 700;
-    font-size: 14px;
-    text-decoration: none;
-    color: #f9f1dc;
-    text-align: center;
-  }
-
-  .offline {
-    font-family: $lato-bold;
-    font-weight: 700;
-    font-size: 14px;
-    color: #f9f1dc;
-    position: absolute;
-    left: 500px;
-  }
-
-  .heading {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 26px;
-    color: #f9f1dc;
-  }
-
-  .heading a {
-    color: #f9f1dc;
-  }
-
-  .heading a:hover {
-    color: #C0C0C0;
-  }
-
-
-  /* Cart Index Page */
-  .cart-heading {
-    font-family: $lato;
-    color: black;
-    text-align: left;
-  }
-
-  #td a {
-    color: black;
-  }
-
-
-  /* Edit pages */
-  .leader {
-    font-family: $lato-bold;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 42px;
-    text-transform: uppercase;
-    color: black;
-  }
-
-  .control-label {
-    padding: 0;
-    margin: 0;
-    font-family: $lato;
-    color: #606060;
-    font-size: 14px !important;
-    text-transform: uppercase;
-  }
-
-
-  /* Posts pages */
-  .heading {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 26px;
-    color: #f9f1dc;
-  }
-
-  .heading a {
-    color: #f9f1dc;
-  }
-
-  .box-header {
-    font-family: $lato;
-    font-size: 15px;
-    line-height: 21px;
-    font-weight: 600;
-    color: black;
-  }
-
-  .featured-content a:hover {
-    color:  #808080;
-    text-decoration: none;
-  }
-
   .tag-box li {
     color: white;
   }
@@ -570,6 +538,11 @@ a:focus {
   .tag--centre {
     padding-left: 30px;
     text-decoration: none;
+  }
+
+  .tag--centre a:hover {
+    border-bottom: none  !important;
+    text-decoration: none !important;
   }
 
   .previous {
@@ -586,62 +559,60 @@ a:focus {
     font-size: 12px;
     color: #f9f1dc;
   }
+  /* End of Posts Show Pages */
 
-  .com--links a {
-    font-family: $fira;
+
+  /* Posts Index Page */
+  .heading {
+    font-family: $lato;
+    font-weight: 400;
     font-size: 14px;
     line-height: 26px;
-    font-weight: 700;
-    margin-left: 15px;
     color: #f9f1dc;
   }
 
-/* Community Pages */
-  .nav-tabs>li.active>a {
-    font-family: $fira;
-    font-size: 12px;
-    line-height: 23px;
-    font-weight: 700;
-    color: #555 !important;
-    cursor: default;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
-  }
-
-  .nav-tabs li a {
-    font-family: $fira;
-    font-size: 12px;
-    line-height: 23px;
-    font-weight: 700;
-    color: grey;
-
-  }
-
-  .com--links a {
-    font-family: $fira;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    margin-left: 15px;
+  .heading a {
     color: #f9f1dc;
   }
 
- .panel-default {
-    background-color: #f9f1dc;
-    border: none;
+  .box-header {
+    font-family: $lato;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    color: black !important;
   }
 
+  .featured-content a:hover {
+    color:  #808080;
+    text-decoration: none;
+  }
 
-}
-
-@media screen and (min-width: 481px) and (max-width: 980px) {
-
-  /* Product Index page */
-  .product-heading a {
+  /* Product show page */
+  .show-heading a {
     font-family: $lato-bold;
     font-weight: 700;
     font-size: 14px;
     text-decoration: none;
+    color: #f9f1dc;
+  }
+
+
+
+  /* Product index page */
+  .show--link {
+    font-family: $lato-bold;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .price {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
     color: #f9f1dc;
   }
 
@@ -654,32 +625,37 @@ a:focus {
     color: #003434;
   }
 
-  .side-links {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .side-links li  {
-    padding-bottom: 10px;
-  }
-
-  .show--link {
-    font-family: $lato-bold;
-    font-weight: 700;
-    font-size: 14px;
-    text-decoration: none;
-    color: #f9f1dc;
-    text-align: center;
-  }
-
   .offline {
     font-family: $lato-bold;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 14px;
     color: #f9f1dc;
     position: absolute;
     left: 500px;
+  }
+  /* End of Product Index Page */
+
+  /* Products show page */
+  .sub-heading {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #f9f1dc;
+  }
+
+  .sub-heading a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #f9f1dc;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .sub-heading a:hover {
+    color: #E0E0E0;
   }
 
   .heading {
@@ -690,7 +666,6 @@ a:focus {
     color: #f9f1dc;
   }
 
-
   .heading a {
     color: #f9f1dc;
   }
@@ -698,58 +673,9 @@ a:focus {
   .heading a:hover {
     color: #C0C0C0;
   }
+  /* End of Products Show Page */
 
-  .leader {
-    font-family: $lato-bold;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 48px;
-    text-transform: uppercase;
-    color: black;
-  }
-
-  .control-label {
-    padding: 0;
-    margin: 0;
-    font-family: $lato;
-    color: #606060;
-    font-size: 14px !important;
-    line-height: 22px;
-    text-transform: uppercase;
-  }
-
-  /* Posts pages */
-  .box-header {
-    font-family: $lato;
-    font-size: 15px;
-    line-height: 21px;
-    font-weight: 600;
-    color: black;
-  }
-
-  .featured-content a:hover {
-    color:  #808080;
-    text-decoration: none;
-  }
-
-  .tag-box li {
-    color: white;
-  }
-
-  .tag--centre {
-    padding-left: 30px;
-    text-decoration: none;
-  }
-
-  .previous {
-    padding-right: 200px;
-  }
-
-  .next {
-    padding-left: 200px;
-  }
-
-  /* Community Pages */
+  /* Community Page */
   .nav-tabs>li.active>a {
     font-family: $fira;
     font-size: 12px;
@@ -784,6 +710,360 @@ a:focus {
     border: none;
   }
 
+  /* Profile pages */
+  .make-profile a {
+    font-family: $fira;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .make-profile a:hover {
+    font-family: $fira;
+    color: grey;
+  }
+
+  .profile--links a {
+    font-family: $fira;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #f9f1dc;
+  }
+
+  .profile--links a:hover {
+    font-family: $fira;
+    color: #f9f1dc;
+    text-decoration: none;
+
+  }
+
+  .bio--body {
+    font-family: $fira;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #f9f1dc;
+  }
+
+  /*  All Form pages */
+  .leader {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: $fira;
+    color: #606060;
+    font-size: 14px !important;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  /* Iconography */
+  .fa-long-arrow-left {
+    color: #f8f8f8;
+  }
+
+  .fa-long-arrow-right {
+    color: #f8f8f8;
+  }
+
+  .fa-tag {
+    color: #f8f8f8;
+  }
+
+  /* Thank you page */
+  .farewell {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: black;
+  }
+
+
+  /* Chat page */
+  .user-link {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #003434;
+  }
+
+  .user-list a:hover {
+    color: #7A4012 !important;
+    border-bottom: 2px solid #C0C0C0  !important;
+  }
+  /* End of Chat page */
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  /* All Form pages */
+  .form--title {
+    font-family: $fira;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  /* Shopping Cart Pages */
+  .cart--title {
+    font-family: $fira;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 700;
+    color: #C0C0C0;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .cart-heading {
+    font-family: $lato;
+    color: black;
+    text-align: left;
+  }
+
+  #td a {
+    color: black;
+  }
+  /* End of Shopping Cart Pages */
+
+  /* Posts Show Page */
+  .published--at {
+    font-family: $fira-light;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #f9f1dc;
+  }
+
+  .sidebar-title {
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #f9f1dc;
+    text-decoration: none;
+    text-transform: none;
+  }
+
+  .sidebar-para {
+    font-family: $lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #f9f1dc;
+    text-decoration: none;
+  }
+
+  .sidebar-comments {
+    font-family: $lato;
+    font-weight: 300;
+    line-height: 19px;
+    font-size: 12px;
+    color: #f9f1dc;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .sidebar-body {
+    font-family: $lato;
+    font-weight: 500;
+    font-size: 12px;
+    color: #f9f1dc;
+  }
+
+  .side-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .side-links li  {
+    padding-bottom: 10px;
+  }
+
+  .tag-box li {
+    color: white;
+  }
+
+  .tag--centre {
+    padding-left: 30px;
+    text-decoration: none;
+  }
+
+  .tag--centre a:hover {
+    border-bottom: none  !important;
+    text-decoration: none !important;
+  }
+
+  .previous {
+    padding-right: 200px;
+  }
+
+  .next {
+    padding-left: 200px;
+  }
+
+  .body {
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #f9f1dc;
+  }
+  /* End of Posts Show Pages */
+
+  /* Posts Index Page */
+  .heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f9f1dc;
+  }
+
+  .heading a {
+    color: #f9f1dc;
+  }
+
+  .box-header {
+    font-family: $lato;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    color: black !important;
+  }
+
+  .featured-content a:hover {
+    color:  #808080;
+    text-decoration: none;
+  }
+
+  /* Product show page */
+  .show-heading a {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f9f1dc;
+  }
+
+
+
+  /* Product index page */
+  .show--link {
+    font-family: $lato-bold;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .price {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 14px;
+    color: #f9f1dc;
+  }
+
+  .deal h3 {
+    font-family: $lato;
+    font-weight: 500;
+    padding-top: 20px;
+    font-size: 2.17em;
+    text-transform: uppercase;
+    color: #003434;
+  }
+
+  .offline {
+    font-family: $lato-bold;
+    font-weight: 300;
+    font-size: 14px;
+    color: #f9f1dc;
+    position: absolute;
+    left: 500px;
+  }
+  /* End of Product Index Page */
+
+  /* Products show page */
+  .sub-heading {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #f9f1dc;
+  }
+
+  .sub-heading a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #f9f1dc;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .sub-heading a:hover {
+    color: #E0E0E0;
+  }
+
+  .heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f9f1dc;
+  }
+
+  .heading a {
+    color: #f9f1dc;
+  }
+
+  .heading a:hover {
+    color: #C0C0C0;
+  }
+  /* End of Products Show Page */
+
+  /* Community Page */
+  .nav-tabs>li.active>a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #555 !important;
+    cursor: default;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+  }
+
+  .nav-tabs li a {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+    color: grey;
+
+  }
+
   .com--links a {
     font-family: $fira;
     font-size: 14px;
@@ -792,6 +1072,109 @@ a:focus {
     margin-left: 15px;
     color: #f9f1dc;
   }
+
+  .panel-default {
+    background-color: #f9f1dc;
+    border: none;
+  }
+
+  /* Profile pages */
+  .make-profile a {
+    font-family: $fira;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #f9f1dc;
+    text-align: center;
+  }
+
+  .make-profile a:hover {
+    font-family: $fira;
+    color: grey;
+  }
+
+  .profile--links a {
+    font-family: $fira;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #f9f1dc;
+  }
+
+  .profile--links a:hover {
+    font-family: $fira;
+    color: #f9f1dc;
+    text-decoration: none;
+
+  }
+
+  .bio--body {
+    font-family: $fira;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #f9f1dc;
+  }
+
+  /*  All Form pages */
+  .leader {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: $fira;
+    color: #606060;
+    font-size: 14px !important;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  /* Iconography */
+  .fa-long-arrow-left {
+    color: #f8f8f8;
+  }
+
+  .fa-long-arrow-right {
+    color: #f8f8f8;
+  }
+
+  .fa-tag {
+    color: #f8f8f8;
+  }
+
+  /* Thank you page */
+  .farewell {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: black;
+  }
+
+
+  /* Chat page */
+  .user-link {
+    font-family: $fira;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #003434;
+  }
+
+  .user-list a:hover {
+    color: #7A4012 !important;
+    border-bottom: 2px solid #C0C0C0  !important;
+  }
+  /* End of Chat page */
+
 
 }
 
@@ -861,7 +1244,7 @@ a:focus {
 /* Customised Titles */
   .show--link {
     font-family: $montserrat;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 18px;
     text-decoration: none;
     color: #f9f1dc;
@@ -872,7 +1255,7 @@ a:focus {
     font-family: $montserrat;
     font-size: 30px;
     line-height: 43px;
-    font-weight: 700;
+    font-weight: 300;
     color: black;
     text-transform: uppercase;
     text-align: center;

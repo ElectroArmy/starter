@@ -95,7 +95,7 @@
 
                     <script>
 
-                        Stripe.setPublishableKey("<?php echo env('STRIPE_PUBLIC_KEY') ?>");
+                        Stripe.setPublishableKey("<?php echo env('STRIPE_KEY') ?>");
 
                         Stripe.applePay.checkAvailability(function(available) {
 
