@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
 
-class ContactSent extends Mailable implements ShouldQueue
+class ContactSent extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -33,14 +33,13 @@ class ContactSent extends Mailable implements ShouldQueue
      */
     public function build(ContactFormRequest $request)
     {
-        return $this->view('emails.contact.contact')
+        return $this->markdown('emails.contact.contact')
+            ->with([
+                'name' => $request->get('name'),
+                'email' => $request->get('email'),
+                'body_message' => $request->get('message')
+            ]);
 
-                    ->with([
-                            'name' => $request->get('name'),
-                            'email' => $request->get('email'),
-                            'body_message' => $request->get('message')
-                    ])
-                    ->from(['email' => $request->get('email')]);
 
 
 

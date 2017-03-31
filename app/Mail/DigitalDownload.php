@@ -42,8 +42,7 @@ class DigitalDownload extends Mailable implements ShouldQueue
     public function build()
     {
 
-        return $this->view('emails.download')
-            ->from('administrator@ormrepo.co.uk')
+        return $this->markdown('emails.download')
             ->subject('Your Key Download Instructions')
             ->with([
                 'orderName' => $this->order->billing_name,

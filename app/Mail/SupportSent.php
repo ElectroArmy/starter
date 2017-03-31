@@ -32,13 +32,12 @@ class SupportSent extends Mailable implements ShouldQueue
     public function build(SupportRequest $request)
     {
 
-        return $this->view('emails.support.support')
-
-            ->with([
+        return $this->markdown('emails.support.support')
+             ->with([
                 'name' => $request->get('name'),
                 'email' => $request->get('email'),
                 'problem' => $request->get('problem')
-            ])
+             ])
             ->from(['email' => $request->get('email')]);
 
 

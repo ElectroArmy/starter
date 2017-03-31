@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'administrator@ormrepo.co.uk'),
+        'address' => env('MAIL_FROM_ADDRESS', 'ormrepo@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Gamesstation'),
     ],
 
@@ -113,11 +113,13 @@ return [
     */
 
     'markdown' => [
-        'theme' => 'default',
+        'theme' => 'games',
 
         'paths' => [
             resource_path('views/vendor/mail'),
         ],
     ],
+
+
 
 ];
