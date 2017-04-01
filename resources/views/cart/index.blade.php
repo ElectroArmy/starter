@@ -6,48 +6,52 @@
 
     <div class="main-container">
 
+        <div class="cart-container">
+            <div class="header">
+                <h4 class="cart--title">Cart</h4>
 
-        <div class="header">
-            <h4 class="cart--title">Cart</h4>
-        </div><!-- /.header -->
+
+
 
             @if (count($cart) == 0)
-                <p class="offline">Your cart is currently empty</p>
+                <p class="cart-offline">Your cart is currently empty</p>
+            </div>
+            <!-- /.header -->
             @else
 
                 <table class="table table-striped">
                     <thead>
-                        <tr>
-                            <th></th>
-                            <th>Quantity</th>
-                            <th>Price</th>
-                        </tr>
+                    <tr>
+                        <th></th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
                     </thead>
 
                     <tbody>
-                        @foreach ($cart as $item)
-                            <tr>
-                                <td><a href="/cart/remove/{!!  $item->id !!}" id="cart-links">x</a></td>
-                                <td>{!!  $item->qty !!}</td>
-                                <td>£{!!  $item->price !!}</td>
-                            </tr>
-                        @endforeach
+                    @foreach ($cart as $item)
+                        <tr>
+                            <td><a href="/cart/remove/{!!  $item->id !!}" id="cart-links">x</a></td>
+                            <td>{!!  $item->qty !!}</td>
+                            <td>£{!!  $item->price !!}</td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
 
-            <div class="row">
-                {!! Form::open(['url' => '/cart/complete', 'class' => 'form', 'id' => 'purchase-form']) !!}
+                <div class="row">
+                    {!! Form::open(['url' => '/cart/complete', 'class' => 'form', 'id' => 'purchase-form']) !!}
 
-                <div class="billing-container">
+                    <div class="billing-container">
                         <div class="form-group form-group-lg">
                             <h1 class="cart-heading">Billing Information</h1>
-                                <div class="col-xl">
-                                    <label for="card_name" class="control-label">Name on card</label>
-                                    <input type="text"
-                                           class="form-control"
-                                           name="card_name"
-                                           id="card_name" value="{{ Auth::user()->name }}">
-                                </div><!-- /.col-xl -->
+                            <div class="col-xl">
+                                <label for="card_name" class="control-label">Name on card</label>
+                                <input type="text"
+                                       class="form-control"
+                                       name="card_name"
+                                       id="card_name" value="{{ Auth::user()->name }}">
+                            </div><!-- /.col-xl -->
                         </div><!-- /.form-group -->
 
                         <div class="form-group form-group-lg">
@@ -84,96 +88,96 @@
                         </div><!-- /.form-group -->
 
                         <div class="form-group form-group-lg">
-                           <div class="col-xb">
+                            <div class="col-xb">
                                 <label for="country" class="control-label">Country</label>
-                               <input type="text"
-                                      class="form-control"
-                                      name="country"
-                                      id="country"
-                                      placeholder="Country">
+                                <input type="text"
+                                       class="form-control"
+                                       name="country"
+                                       id="country"
+                                       placeholder="Country">
                             </div><!-- /.col-xb -->
                         </div><!-- /.form-group -->
-                </div><!-- /.billing-Container -->
+                    </div><!-- /.billing-Container -->
 
 
-                <div class="shipping-container">
-                    <div class="form-group form-group-lg">
-                        <h1 class="cart-heading">Shipping Information</h1>
-                        <div class="col-xl">
-                            <label for="shipping_name" class="control-label">Shipping Name</label>
-                            <input type="text"
-                                  class="form-control"
-                                  name="shipping_name"
-                                  id="shipping_name" value="{{ Auth::user()->name }}">
+                    <div class="shipping-container">
+                        <div class="form-group form-group-lg">
+                            <h1 class="cart-heading">Shipping Information</h1>
+                            <div class="col-xl">
+                                <label for="shipping_name" class="control-label">Shipping Name</label>
+                                <input type="text"
+                                       class="form-control"
+                                       name="shipping_name"
+                                       id="shipping_name" value="{{ Auth::user()->name }}">
 
-                        </div><!-- /.col-xl -->
-                    </div><!-- /.form-group -->
+                            </div><!-- /.col-xl -->
+                        </div><!-- /.form-group -->
 
-                    <div class="form-group form-group-lg">
-                        <div class="col-xl">
-                            <label for="shipping_address" class="control-label">Address</label>
-                            <input type="text"
-                                   class="form-control"
-                                   id="shipping_address" value="{{ Auth::user()->address }}"
-                                   name="shipping_address"
-                                   placeholder="Address">
-                        </div><!-- /.col-xl -->
-                    </div><!-- /.form-group -->
+                        <div class="form-group form-group-lg">
+                            <div class="col-xl">
+                                <label for="shipping_address" class="control-label">Address</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="shipping_address" value="{{ Auth::user()->address }}"
+                                       name="shipping_address"
+                                       placeholder="Address">
+                            </div><!-- /.col-xl -->
+                        </div><!-- /.form-group -->
 
-                    <div class="form-group form-group-lg">
-                        <div class="col-xb">
-                            <label for="shipping_city" class="control-label">City</label>
-                            <input type="text"
-                                   class="form-control"
-                                   id="shipping_city" value="{{ Auth::user()->city }}"
-                                   name="shipping_city"
-                                   placeholder="City">
-                        </div><!-- /.col-xl -->
-                    </div><!-- /.form-group -->
+                        <div class="form-group form-group-lg">
+                            <div class="col-xb">
+                                <label for="shipping_city" class="control-label">City</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="shipping_city" value="{{ Auth::user()->city }}"
+                                       name="shipping_city"
+                                       placeholder="City">
+                            </div><!-- /.col-xl -->
+                        </div><!-- /.form-group -->
 
-                    <div class="form-group form-group-lg">
-                      <div class="col-xb">
-                            <label for="shipping_zip" class="control-label">Postcode</label>
-                          <input type="text"
-                                 class="form-control"
-                                 name="shipping_zip"
-                                 placeholder="Postcode"
-                                 id="zip" value="{{ Auth::user()->zip }}">
-                        </div><!-- /.col-xl -->
-                    </div><!-- /.form-group -->
+                        <div class="form-group form-group-lg">
+                            <div class="col-xb">
+                                <label for="shipping_zip" class="control-label">Postcode</label>
+                                <input type="text"
+                                       class="form-control"
+                                       name="shipping_zip"
+                                       placeholder="Postcode"
+                                       id="zip" value="{{ Auth::user()->zip }}">
+                            </div><!-- /.col-xl -->
+                        </div><!-- /.form-group -->
 
-                    <div class="form-group form-group-lg">
-                      <div class="col-xb">
-                            <label for="shipping_country" class="control-label">Country</label>
-                            <input type="text"
-                                 class="form-control"
-                                 name="shipping_country"
-                                 value="UK"
-                                 id="shipping_country">
-                        </div><!-- /.col-xl -->
-                    </div><!-- /.form-group -->
-                </div><!-- /.shipping-container -->
+                        <div class="form-group form-group-lg">
+                            <div class="col-xb">
+                                <label for="shipping_country" class="control-label">Country</label>
+                                <input type="text"
+                                       class="form-control"
+                                       name="shipping_country"
+                                       value="UK"
+                                       id="shipping_country">
+                            </div><!-- /.col-xl -->
+                        </div><!-- /.form-group -->
+                    </div><!-- /.shipping-container -->
 
-                <div class="expiration">
+                    <div class="expiration">
 
-                    <h1 class="cart-heading">Card Expiration </h1>
+                        <h1 class="cart-heading">Card Expiration </h1>
 
-                    <div class="card-details">
-                        <label for="card-number" class="control-label">Credit Card Number</label>
-                        <div class="col-xb">
+                        <div class="card-details">
+                            <label for="card-number" class="control-label">Credit Card Number</label>
+                            <div class="col-xb">
 
-                            <input type="text"
-                                   class="form-control"
-                                   id="card-number"
-                                   placeholder="Valid Card Number" required autofocus
-                                   data-stripe="number"
-                                   value="{{ App::environment() == 'local' ? '4242424242424242' : '' }}">
-                        </div><!-- /.col-xl -->
-                    </div><!-- /.form-group -->
+                                <input type="text"
+                                       class="form-control"
+                                       id="card-number"
+                                       placeholder="Valid Card Number" required autofocus
+                                       data-stripe="number"
+                                       value="{{ App::environment() == 'local' ? '4242424242424242' : '' }}">
+                            </div><!-- /.col-xl -->
+                        </div><!-- /.form-group -->
 
-                    <div class="card-details">
-                        <label for="card-month" class="control-label">Expiration Date</label>
-                        <div class="col-xs-p">
+                        <div class="card-details">
+                            <label for="card-month" class="control-label">Expiration Date</label>
+                            <div class="col-xs-p">
 
                                 <input type="text" size="3"
                                        class="form-control"
@@ -186,40 +190,48 @@
                             </div>
                         </div>
 
-                    <div class="card-details">
+                        <div class="card-details">
 
-                        <div class="col-xs-p">
-                            <input type="text" size="4"
-                                class="form-control"
-                                name="exp_year"
-                                data-stripe="exp-year"
-                                placeholder="YYYY"
-                                id="card-year"
-                                value="{{ App::environment() == 'local' ? '2016' : '' }}"
-                                required>
-                        </div><!-- /.col-xs-p -->
+                            <div class="col-xs-p">
+                                <input type="text" size="4"
+                                       class="form-control"
+                                       name="exp_year"
+                                       data-stripe="exp-year"
+                                       placeholder="YYYY"
+                                       id="card-year"
+                                       value="{{ App::environment() == 'local' ? '2016' : '' }}"
+                                       required>
+                            </div><!-- /.col-xs-p -->
 
-                    </div><!-- /.card-details -->
+                        </div><!-- /.card-details -->
 
-                    <div class="card-details">
-                        <label for="card-cvc" class="control-label">Security Code</label>
-                        <div class="col-xs-p">
+                        <div class="card-details">
+                            <label for="card-cvc" class="control-label">Security Code</label>
+                            <div class="col-xs-p">
                                 <input type="text"
-                                    class="form-control"
-                                    id="card-cvc"
-                                    placeholder=""
-                                    size="6"
-                                    value="{{ App::environment() == 'local' ? '123' : '' }}">
-                        </div>
+                                       class="form-control"
+                                       id="card-cvc"
+                                       placeholder=""
+                                       size="6"
+                                       value="{{ App::environment() == 'local' ? '123' : '' }}">
+                            </div>
 
-                        <div class="button-centre">
-                            <button type="submit" class="submit-button btn btn-default btn-lg">Complete Order</button>
-                        </div>
-                    </div><!-- /.card-details -->
-                </div><!-- /.expiration -->
+                            <div class="button-centre">
+                                <button type="submit" class="submit-button btn btn-default btn-lg">Complete Order</button>
+                            </div>
+                        </div><!-- /.card-details -->
+                    </div><!-- /.expiration -->
 
-                {!! Form::close() !!}
-            </div><!-- /.row -->
+                    {!! Form::close() !!}
+                </div><!-- /.row -->
+
+        </div>
+        <!-- /.cart-container -->
+
+
+
+
+
 
 
     </div><!-- /.main-container -->

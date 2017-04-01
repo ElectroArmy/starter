@@ -8,7 +8,7 @@
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <title>Gamesstation | @yield('meta-title', 'The Gamesstation')</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/libs.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css')}}"/>
@@ -74,14 +74,16 @@
         return t;
     }(document, "script", "twitter-wjs"));
 </script>
+<script>(function(t,e,n,o){var s,c,r;t.SMCX=t.SMCX||[],e.getElementById(o)||(s=e.getElementsByTagName(n),c=s[s.length-1],r=e.createElement(n),r.type="text/javascript",r.async=!0,r.id=o,r.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/y2yvvg3YthKveYSOaQCl2Dv6IR4opkNSE46MIsXTnn_2BrD4G4_2FqdkJzwkxJxr_2BTOD.js"].join(""),c.parentNode.insertBefore(r,c))})(window,document,"script","smcx-sdk");</script>
 
-<script>(function(t,e,n,o){var s,c,r;t.SMCX=t.SMCX||[],e.getElementById(o)||(s=e.getElementsByTagName(n),c=s[s.length-1],r=e.createElement(n),r.type="text/javascript",r.async=!0,r.id=o,r.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/09dlJFIA3nCa_2F2nxjr6h2emNRq_2Bb_2BC2ov2sRTvyLx_2FvmtLSMqcQTMR4Bgl4hVjfu.js"].join(""),c.parentNode.insertBefore(r,c))})(window,document,"script","smcx-sdk");</script>
+
 <!-- Place this tag in your head or just before your close body tag. -->
 <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'en-GB'}
 </script>
 
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
 <script>
     // Google Analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -96,7 +98,7 @@
 
 <script src="/js/libs.js"></script>
 @include('flash')
-<script src="/js/all.js"></script>
+
 @yield('footer_js')
 
 

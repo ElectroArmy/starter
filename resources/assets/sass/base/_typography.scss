@@ -57,6 +57,7 @@ h6 {
 p {
   font-family: $lato;
   font-size: 12px;
+  font-weight: 200;
   line-height: 18px;
   color: #f9f1dc;
 }
@@ -92,9 +93,9 @@ a:focus {
   font-size: 30px;
   line-height: 43px;
   font-weight: 700;
-  color: #C0C0C0;
+  color: #f9f1dc;
   text-transform: capitalize;
-  text-align: center;
+
 }
 
 .cart-heading {
@@ -439,6 +440,15 @@ a:focus {
 }
 /* End of Chat page */
 
+.cart-offline {
+  font-family: "Lato Bold", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #f9f1dc;
+  text-transform: capitalize;
+
+}
+
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
@@ -450,7 +460,7 @@ a:focus {
     line-height: 43px;
     font-weight: 300;
     color: black;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   /* Shopping Cart Pages */
@@ -459,9 +469,8 @@ a:focus {
     font-size: 30px;
     line-height: 43px;
     font-weight: 700;
-    color: #C0C0C0;
+    color: #f9f1dc;
     text-transform: capitalize;
-    text-align: center;
   }
 
   .cart-heading {
@@ -473,6 +482,16 @@ a:focus {
   #td a {
     color: black;
   }
+
+  .cart-offline {
+    font-family: "Lato Bold", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #f9f1dc;
+    text-transform: capitalize;
+
+  }
+
   /* End of Shopping Cart Pages */
 
   /* Posts Show Page */
@@ -819,7 +838,7 @@ a:focus {
     line-height: 43px;
     font-weight: 300;
     color: black;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   /* Shopping Cart Pages */
@@ -828,9 +847,17 @@ a:focus {
     font-size: 30px;
     line-height: 43px;
     font-weight: 700;
-    color: #C0C0C0;
+    color: #f9f1dc;
     text-transform: capitalize;
-    text-align: center;
+
+  }
+  .cart-offline {
+    font-family: "Lato Bold", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #f9f1dc;
+    text-transform: capitalize;
+
   }
 
   .cart-heading {
@@ -1257,7 +1284,7 @@ a:focus {
     line-height: 43px;
     font-weight: 300;
     color: black;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
   }
 

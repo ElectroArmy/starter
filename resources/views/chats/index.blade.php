@@ -2,6 +2,11 @@
 
 @section('content')
 
+    <div class="header">
+        <h1 class="form--title is--beige">Live Chat</h1>
+        <h3 class="is--beige">Avaliable between 0900 AND 1700 Monday to Friday</h3>
+    </div><!-- /.header -->
+
     <div id="app">
         <div class="container">
             <div class="row">

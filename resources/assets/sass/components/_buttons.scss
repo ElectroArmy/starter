@@ -50,7 +50,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-primary:hover {
-  background-color: #808080 !important;
+  background-color: #D8B98B !important;
   color: whitesmoke !important;
 }
 
@@ -66,6 +66,12 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   border-radius: 5px;
   margin-left: 5px;
 }
+
+.btn-tag:hover {
+  background-color: #D8B98B !important;
+  color: whitesmoke !important;
+}
+
 
 .btn-small,
 .btn-small:active,
@@ -128,7 +134,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-cart:hover {
-  background-color: #107896 !important;
+  background-color: #D8B98B !important;
   color: #f8f8f8 !important;
   text-decoration: none;
 }
@@ -139,7 +145,8 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   border: 0;
   font-size: 12px;
   color:  #003434 !important;
-  padding-left: 150px;
+  margin: 0;
+  padding-top: 13px;
 }
 
 .btn-link:hover {
@@ -162,7 +169,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-message:hover {
-  background-color: #808080;
+  background-color: #D8B98B !important;
   color: whitesmoke;
   text-decoration: none;
 }
@@ -185,7 +192,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-chat:hover {
-  background-color: #808080 !important;
+  background-color: #D8B98B !important;
   color: whitesmoke !important;
 }
 
@@ -245,7 +252,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-default:hover {
-    background-color: #D8B98B;
+    background-color: #D8B98B !important;
     color: #f8f8f8;
     text-decoration: none;
     text-transform: uppercase;
@@ -273,7 +280,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-primary:hover {
-    background-color: #808080 !important;
+    background-color: #D8B98B !important;
     color: whitesmoke !important;
   }
 
@@ -288,6 +295,11 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
     max-width: 50px;
     border-radius: 5px;
     margin-left: 5px;
+  }
+
+  .btn-tag:hover {
+    background-color: #D8B98B !important;
+    color: whitesmoke !important;
   }
 
   .btn-small {
@@ -348,7 +360,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-cart:hover {
-    background-color: #107896 !important;
+    background-color: #D8B98B !important;
     color: #f8f8f8 !important;
     text-decoration: none;
   }
@@ -364,7 +376,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-plan:hover {
-    background-color: grey;
+    background-color: #D8B98B;
     color: white;
   }
 
@@ -374,7 +386,8 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
     border: 0;
     font-size: 12px;
     color:  #003434 !important;
-    padding-left: 100px;
+    margin: 0;
+    padding-top: 13px;
   }
 
   .btn-link:hover {
@@ -399,7 +412,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-chat:hover {
-    background-color: #808080 !important;
+    background-color: #D8B98B !important;
     color: whitesmoke !important;
   }
 
@@ -488,7 +501,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-primary:hover {
-    background-color: #808080 !important;
+    background-color: #D8B98B !important;
     color: whitesmoke !important;
   }
 
@@ -503,6 +516,11 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
     max-width: 50px;
     border-radius: 5px;
     margin-left: 5px;
+  }
+
+  .btn-tag:hover {
+    background-color: #D8B98B !important;
+    color: whitesmoke !important;
   }
 
   .btn-small {
@@ -560,7 +578,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-cart:hover {
-    background-color: #107896 !important;
+    background-color: #D8B98B;
     color: #f8f8f8 !important;
     text-decoration: none;
   }
@@ -571,7 +589,8 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
     border: 0;
     font-size: 12px;
     color:  #003434 !important;
-    padding-left: 100px;
+    padding-top: 13px;
+    margin: 0;
   }
 
   .btn-link:hover {
@@ -596,7 +615,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-chat:hover {
-    background-color: #808080 !important;
+    background-color: #D8B98B !important;
     color: whitesmoke !important;
   }
 
@@ -649,7 +668,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-primary:hover {
-    background-color: #808080 !important;
+    background-color: #D8B98B !important;
     color: whitesmoke !important;
   }
 
@@ -664,6 +683,11 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
     width: 30px;
     border-radius: 5px;
     margin-left: 5px;
+  }
+
+  .btn-tag:hover {
+    background-color: #D8B98B !important;
+    color: whitesmoke !important;
   }
 
   .btn-small {
@@ -700,7 +724,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-message:hover {
-    background-color: #808080;
+    background-color: #D8B98B !important;
     color: whitesmoke;
     text-decoration: none;
   }
@@ -742,7 +766,7 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-cart:hover {
-    background-color: #107896 !important;
+    background-color: #D8B98B !important;
     color: #f8f8f8 !important;
     text-decoration: none;
   }
@@ -753,7 +777,8 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
     border: 0;
     font-size: 12px;
     color:  #003434 !important;
-    padding-bottom: 5px;
+    padding: 0;
+    margin: 0;
   }
 
   .btn-link:hover {
@@ -778,11 +803,9 @@ $lato: 'Lato Regular','Helvetica Neue', Arial, sans-serif;
   }
 
   .btn-chat:hover {
-    background-color: #808080 !important;
+    background-color: #D8B98B !important;
     color: whitesmoke !important;
   }
-
-
 
   .hamburger{
     color: white;

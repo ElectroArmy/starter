@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
 
-class ContactSent extends Mailable
+class ContactSent extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 

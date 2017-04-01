@@ -27,7 +27,7 @@ class EmailSupportNotification implements ShouldQueue
      */
     public function handle(SupportWasSent $event)
     {
-        $when = Carbon::now()->addMinutes(1);
+        $when = Carbon::now()->addMinutes(2);
 
 
         Mail::to('administrator@ormrepo.co.uk')

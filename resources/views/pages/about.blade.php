@@ -4,7 +4,13 @@
 
 @section('content')
 
+
+
 <div class="main-container">
+    <div class="header">
+        <h1 class="form--title is--beige">About us</h1>
+    </div><!-- /.header -->
+
    <div class="game-banner animated zoomInDown">
         <img src="/images/about.png" class="games" alt="A picture of a games console">
         <img src="/images/blue_game.png" class="games" alt="A picture of a blue games console">

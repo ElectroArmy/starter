@@ -2,6 +2,10 @@
 
 
 @section('content')
+
+    <div class="header">
+        <h1 class="form--title is--beige">Our Community</h1>
+    </div><!-- /.header -->
     <div class="row">
         <div class="col-md-8">
                 <h4 class="com--links">
