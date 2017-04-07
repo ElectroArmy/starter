@@ -39,7 +39,7 @@
                 {!! Form::hidden('product_id', $product->id) !!}
                 <script
                         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="{{ env('STRIPE_PUBLIC_KEY') }}"
+                        data-key="{{ env('STRIPE_KEY') }}"
                         data-name="Gamestation Ltd"
                         data-billing-address=true
                         data-shipping-address=true
