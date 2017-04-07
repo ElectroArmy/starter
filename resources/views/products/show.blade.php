@@ -93,6 +93,7 @@
 
 
     <script>
+        import * as $ from "jquery";
         Stripe.setPublishableKey('pk_test_yLcuuylHTzpKDXUa741edFUz');
 
         Stripe.applePay.checkAvailability(function(available) {
@@ -153,6 +154,12 @@
                 });
 
             session.begin();
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
         }
     </script>
 @endsection
