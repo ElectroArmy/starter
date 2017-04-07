@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Events\PostWasCreated;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -13,7 +14,7 @@ use App\RecordActivity;
 use App\Tag;
 use Illuminate\Support\Facades\Auth;
 use App\Comment;
-use App\Notifications\PostPublished;
+
 
 class PostsController extends Controller
 {
@@ -29,8 +30,6 @@ class PostsController extends Controller
     public function __construct(User $user)
     {
         $this->user = $user;
-
-        //parent::__construct();
 
         $this->middleware('auth');
 
@@ -161,9 +160,7 @@ class PostsController extends Controller
 
         $user = auth()->user();
 
-        //event(new PostWasCreated($post, $user));
-
-        $user->notify(new PostPublished($post));
+        event(new PostWasCreated($post, $user));
 
         flash()->success('Post Published', 'Your blog post has been published.');
 

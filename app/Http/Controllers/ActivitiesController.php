@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Exceptions\ActivityNotFoundException;
-use App\Http\Requests;
 use Illuminate\Http\Response;
 
 
@@ -19,16 +18,16 @@ class ActivitiesController extends Controller
     public function show()
     {
         try {
-            $user = auth()->user();
+                $user = auth()->user();
 
-            $activity = $user->activity()->with(['user', 'subject'])->get();
+                $activity = $user->activity()->with(['user', 'subject'])->get();
 
-        } catch (\Exception $e) {
+            } catch (\Exception $e) {
 
-            throw new ActivityNotFoundException($e->getMessage());
-        }
+                throw new ActivityNotFoundException($e->getMessage());
+            }
 
-        return view('activity.show', compact('activity'));
+            return view('activity.show', compact('activity'));
     }
 
 }

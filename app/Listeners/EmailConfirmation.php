@@ -5,7 +5,6 @@ namespace App\Listeners;
 use App\Events\SupportWasSent;
 use App\Mail\SupportSent;
 use Carbon\Carbon;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\Mail;
 

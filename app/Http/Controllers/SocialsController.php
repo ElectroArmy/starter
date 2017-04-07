@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use AdamWathan\EloquentOAuth\Facades\OAuth as SocialAuth;
 use App\User;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use SocialNorm\Exceptions\ApplicationRejectedException;
 use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
@@ -77,7 +76,7 @@ class SocialsController extends Controller
 
                     $user = auth()->user();
 
-                    //event(new UserHasRegistered($user));
+                    event(new UserHasRegistered($user));
                 });
         }
         catch (ApplicationRejectedException $e)

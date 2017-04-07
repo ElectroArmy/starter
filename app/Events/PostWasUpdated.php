@@ -4,11 +4,10 @@ namespace App\Events;
 
 use App\Post;
 use App\User;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
 
 
-class PostWasUpdated extends Event implements ShouldQueue
+class PostWasUpdated extends Event
 {
     use SerializesModels;
 

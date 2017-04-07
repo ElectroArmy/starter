@@ -12,6 +12,8 @@
     class CommunityLinksController extends Controller
     {
         /**
+         * Run the Community links query and pull out the popular
+         * links from the request object.
          *
          * @param Channel $channel
          * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
@@ -31,6 +33,8 @@
         }
 
         /**
+         *
+         *
          * @param CommunityLinkForm $form
          * @return \Illuminate\Http\RedirectResponse
          * @internal param User $user , Request $request
@@ -43,7 +47,7 @@
 
                 if (auth()->user()->isTrusted()){
 
-                    //flash()->success('Contribution Accepted', 'Thank you for your contribution.');
+                    flash()->success('Contribution Accepted', 'Thank you for your contribution.');
 
                 } else {
 

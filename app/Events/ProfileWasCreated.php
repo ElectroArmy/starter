@@ -5,11 +5,10 @@ namespace App\Events;
 
 
 use App\User;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
 
 
-class ProfileWasCreated extends Event implements ShouldQueue
+class ProfileWasCreated extends Event
 {
     use SerializesModels;
     /**

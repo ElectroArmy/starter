@@ -26,8 +26,6 @@ class ProductsController extends Controller
     public function __construct()
     {
 
-        //parent::__construct();
-
         $this->middleware('auth');
 
     }
@@ -55,8 +53,6 @@ class ProductsController extends Controller
             } else {
 
                 $products = Product::orderBy('name', 'asc')->get();
-
-
 
                 return view('admin.products.index', compact('products'));
             }

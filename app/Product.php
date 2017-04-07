@@ -2,11 +2,9 @@
 
 namespace App;
 
-    //use App\RecordActivity;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\SoftDeletes;
-
 
 
 class Product extends Model

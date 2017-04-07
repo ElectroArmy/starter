@@ -6,9 +6,9 @@ namespace App\Events;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
-//use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class ContactWasSent extends Event implements ShouldQueue
+
+class ContactWasSent extends Event
 {
     use SerializesModels;
 

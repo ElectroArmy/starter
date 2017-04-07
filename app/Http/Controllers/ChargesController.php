@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Requests\ProductRequest;
 use App\Product;
 use Stripe\Charge;
 use Stripe\Stripe;
@@ -26,15 +24,8 @@ class ChargesController extends Controller
         // Get the payment token submitted by the form:
         $token = $_POST['token'];
 
-        //dd($product);
-
         // Convert the float in to a number for Stripe Api
         $price = $product->price;
-        //$price  = 2000;
-
-
-        //$price = str_replace(',0', '', number_format($product->priceToCents(), 1, ',', ''));
-        //dd($price);
 
         // Charge the user's card:
         $charge = Charge::create(array(

@@ -47,7 +47,7 @@ class NewUser extends Notification implements ShouldQueue
     {
         return (new MailMessage)
                     ->line('A new user has been created.')
-                    ->action('New User Notification', 'https://ormrepo/gamesstation')
+                    ->action('New User Notification', 'https://games.ormrepo.co.uk')
                     ->line('Thank you for using the Gamesstation');
     }
 

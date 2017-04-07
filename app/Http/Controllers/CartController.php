@@ -20,7 +20,7 @@ class CartController extends Controller
     {
         $this->middleware('auth');
 
-        parent::__construct();
+        //parent::__construct();
 
     }
 

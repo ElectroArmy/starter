@@ -5,10 +5,9 @@ namespace App\Events;
 use App\Product;
 use App\User;
 use Illuminate\Queue\SerializesModels;
-//use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ProductWasUpdated extends Event implements ShouldQueue
+
+class ProductWasUpdated extends Event
 {
     use SerializesModels;
     /**

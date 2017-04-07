@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Events\SupportWasSent;
 use App\Http\Requests\SupportRequest;
 

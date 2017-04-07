@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Events\MessagePosted;
 use App\Message;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class ChatsController extends Controller
 {
 
+
+    /**
+     * Display all the chat messages within an index page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         return view('chats.index');
@@ -18,6 +23,8 @@ class ChatsController extends Controller
 
 
     /**
+     * Return all the messages output by a user with a get request.
+     *
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
     public function getMessages()
@@ -28,6 +35,9 @@ class ChatsController extends Controller
     }
 
     /**
+     * Grab the newly created message from the request object and store that message
+     *
+     *
      * @return array
      */
     public function postMessages()

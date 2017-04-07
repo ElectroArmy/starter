@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
 use App\CommunityLink;
 use App\CommunityLinkVote;
 
@@ -25,8 +25,6 @@ class VotesController extends Controller
      */
     public function store(CommunityLink $link)
     {
-
-        //auth()->user()->voteFor($link);
 
         $vote = CommunityLinkVote::firstOrNew([
             'user_id' => auth()->id(),

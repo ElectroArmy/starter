@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Exceptions\PostNotFoundException;
+use App\Exceptions\SlugNotFoundException;
 
 class PostsController extends Controller
 {

@@ -2,10 +2,8 @@
 
 namespace App\Listeners;
 
-use App\Http\Requests\ContactFormRequest;
 use App\Events\ContactWasSent;
 use App\Mail\ContactSent;
-use App\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Contracts\Queue\ShouldQueue;

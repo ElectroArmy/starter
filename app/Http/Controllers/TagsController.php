@@ -37,8 +37,7 @@ class TagsController extends Controller
         try
             {
                 $posts = $tag->posts;
-                //$posts = Tag::has('posts')->get();
-                //dd($posts);
+
                 $index = 'Search Tags';
 
             } catch (TagNotFoundException $e) {

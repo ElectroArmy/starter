@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Events\ProfileWasCreated;
 use App\Exceptions\ProfileNotFoundException;
 use App\Http\Requests\ProfileRequest;
-use App\Notifications\ProfilePublished;
 use App\User;
 
 
@@ -89,8 +87,6 @@ class ProfilesController extends Controller
         $profile = $user->profile()->create($request);
 
         event(new ProfileWasCreated($user));
-
-        //$user->notify(new ProfilePublished($user));
 
         return redirect()->route('home');
 

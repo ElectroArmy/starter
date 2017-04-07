@@ -4,7 +4,6 @@ namespace App\Listeners;
 
 use App\Events\PostWasUpdated;
 use App\Notifications\PostUpdated;
-//use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Post;
 

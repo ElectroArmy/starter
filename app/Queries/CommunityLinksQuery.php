@@ -16,9 +16,7 @@ class CommunityLinksQuery
             ->where('approved', 1)
             ->orderBy($orderBy, 'desc')
             ->paginate(3);
-        //dd($links);
 
-        //dd($links);
     }
 }
 

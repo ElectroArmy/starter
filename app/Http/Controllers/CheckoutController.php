@@ -11,7 +11,6 @@ use App\Product;
 use App\User;
 use Carbon\Carbon;
 use Mail;
-use Stripe\Charge;
 use Stripe\Stripe;
 
 class CheckoutController extends Controller
@@ -73,7 +72,7 @@ class CheckoutController extends Controller
 
             $orders->save();
 
-            //dd($orders);
+
 
             if ($orders->product->is_downloadable) {
 
@@ -123,16 +122,10 @@ class CheckoutController extends Controller
 
         // Token is created using Stripe.js or Checkout!
         // Get the payment token submitted by the form:
-        //$token = $_POST['token'];
 
-        //$price = $_POST['price'];
         $id = $_POST['id'];
         $raw_price = $request->get('price');
         $price = ($raw_price * 100);
-
-
-
-
 
         $user = new User();
         $product = Product::findOrFail($id);

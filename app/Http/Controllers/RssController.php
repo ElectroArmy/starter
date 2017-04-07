@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Post;
 use App\Exceptions\RSSNotFoundException;
 
@@ -17,8 +16,6 @@ class RssController extends Controller
         try {
 
             $posts = Post::latest()->published()->take(10)->get();
-
-            //dd($posts);
 
             if ($posts->isEmpty()) {
 

@@ -7,7 +7,7 @@ use App\Events\CheckoutWasCompleted;
 use App\Notifications\CompletedCheckout;
 use App\User;
 use Illuminate\Contracts\Queue\ShouldQueue;
-//use Illuminate\Queue\InteractsWithQueue;
+
 
 
 class EmailCheckoutCompleted implements ShouldQueue

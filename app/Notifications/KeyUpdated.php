@@ -50,7 +50,7 @@ class KeyUpdated extends Notification implements ShouldQueue
         return (new MailMessage)
             ->line('Your key has been successfully updated')
             ->action('View Key', $url)
-            ->line('Thank you for updating your post');
+            ->line('Thank you for updating your key');
     }
 
     /**

@@ -39,6 +39,7 @@ class CreateTagsTable extends Migration
     {
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::drop('tags');
+        Schema::drop('post_tag');
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }

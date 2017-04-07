@@ -51,7 +51,7 @@ class PostPublished extends Notification implements ShouldQueue
         return (new MailMessage)
                     ->line('Your post has been successfully published')
                     ->action('View Post', $url)
-                    ->line('Thank you for publishing a new post');
+                    ->line('Thank you for publishing your new post');
     }
 
     /**

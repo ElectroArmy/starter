@@ -36,7 +36,7 @@ class CommunityLink extends Model
 
         return $link;
 
-        //return new static(['user_id' => $user->id]);
+
 
     }
 

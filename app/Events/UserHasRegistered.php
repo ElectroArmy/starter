@@ -2,13 +2,11 @@
 
 namespace App\Events;
 
-use App\Events\Event;
 use App\User;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
 
 
-class UserHasRegistered extends Event implements ShouldQueue
+class UserHasRegistered extends Event
 {
     use SerializesModels;
 

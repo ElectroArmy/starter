@@ -5,7 +5,6 @@ namespace App\Listeners;
 use App\Events\PostWasCreated;
 use App\Notifications\PostPublished;
 use App\Post;
-//use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 

@@ -3,11 +3,10 @@
 namespace App\Events;
 
 use App\User;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
-//use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class CheckoutWasCompleted extends Event implements ShouldQueue
+
+class CheckoutWasCompleted extends Event
 {
     use SerializesModels;
 
