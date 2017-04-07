@@ -12,7 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        'url' => '/messages',
-        'url' => '/checkout/charges/'
+        'url' => '/messages', '/checkout/charges/'
+        
     ];
 }
