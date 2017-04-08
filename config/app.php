@@ -174,6 +174,7 @@ return [
         AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider::class,
         Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
+        HttpOz\Roles\RolesServiceProvider::class,
 
         /*
          * Application Service Providers...

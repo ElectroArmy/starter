@@ -5,17 +5,17 @@
 @section('content')
 
 <div class="main-container">
-        <div class="register-fluid">
-                @include('partials.errors')
-                <div class="header">
-                    <h4 class="leader">Create a Key</h4>
-                </div><!-- /.header -->
+    <div class="register-fluid">
+        @include('partials.errors')
 
-                <div class="row">
+            <div class="header">
+                <h4 class="leader">Create a Key</h4>
+            </div><!-- /.header -->
+
+            <div class="row">
+                @role('admin')
+
                     {!! Form::open(array('route' => 'admin.products.store', 'class' => 'form', 'novalidate' => 'novalidate', 'files' => true)) !!}
-
-
-
                     <div class="form-group form-group-lg">
                         {!! Form::label('name', 'Name', ['class' => 'control-label']) !!}
                         {!! Form::text('name', null, array('required', 'class'=>'form-control', 'placeholder'=>'Key Name')) !!}
@@ -35,7 +35,6 @@
                         {!! Form::label('sku', 'SKU', ['class' => 'control-label']) !!}
                         {!! Form::text('sku', null, array('required', 'class'=>'form-control', 'placeholder'=>'PSN-1234')) !!}
                     </div>
-
 
                     <div class="form-group form-group-lg">
                         {!! Form::label('price', 'Price in £', ['class' => 'control-label']) !!}
@@ -58,14 +57,16 @@
                         </label>
                     </div><!-- /.button-centre -->
 
-
-
                     <div class="button-centre">
                         {!! Form::submit('Create Game', array('class'=>'btn btn-primary')) !!}
                     </div><!-- /.button-centre -->
 
                     {!! Form::close() !!}
-                </div><!-- /.row -->
+
+                    @else
+                        <p class="box-header">Sorry you do not have the correct permissions to create a new key.</p>
+                @endrole
+            </div><!-- /.row -->
         </div><!-- /.register-fluid -->
     </div><!-- /.main-container -->
 

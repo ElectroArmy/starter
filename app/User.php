@@ -4,13 +4,14 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-//use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Cashier\Billable;
+use HttpOz\Roles\Traits\HasRole;
+use HttpOz\Roles\Contracts\HasRole as HasRoleContract;
 
-class User extends Authenticatable
+class User extends Authenticatable implements HasRoleContract
 {
-    use Notifiable, Billable;
+    use Notifiable, Billable, HasRole;
 
     /**
      * The database table used by the model.
@@ -248,7 +249,7 @@ class User extends Authenticatable
      * Checks to see if it is admin.
      *
      * @return bool
-     */
+
     public function isAdmin()
     {
         foreach ($this->roles()->get() as $role)
@@ -261,6 +262,18 @@ class User extends Authenticatable
 
         return false;
     }
+     * */
+
+    public function isAdmin ()
+    {
+        return $this->statusCheck(2);
+    }
+
+    protected function statusCheck ($status = 0)
+    {
+        return $this->status === $status ? true : false;
+    }
+
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany

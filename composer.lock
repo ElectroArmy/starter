@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "28612ac0d69d9672d0e3340f9654b349",
-    "content-hash": "33a722e821cfcab91395a28f9b31eeef",
+    "hash": "41e6a936650e37e428ae1958b77bc5e0",
+    "content-hash": "d76172f546dcd04c90d5738f3ea986b6",
     "packages": [
         {
             "name": "adamwathan/eloquent-oauth",
@@ -821,6 +821,54 @@
                 "url"
             ],
             "time": "2017-03-20 17:10:46"
+        },
+        {
+            "name": "httpoz/roles",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/httpoz/roles.git",
+                "reference": "138073d893051fa4ba1d3ce09e075dac39bf6964"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/httpoz/roles/zipball/138073d893051fa4ba1d3ce09e075dac39bf6964",
+                "reference": "138073d893051fa4ba1d3ce09e075dac39bf6964",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HttpOz\\Roles\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Mwanandimai",
+                    "email": "oscar.mwana@gmail.com",
+                    "role": "Architect"
+                }
+            ],
+            "description": "Powerful package for handling roles and permissions in Laravel 5.3.",
+            "homepage": "https://github.com/httpoz/roles",
+            "keywords": [
+                "acl",
+                "httpoz",
+                "illuminate",
+                "laravel",
+                "permissions",
+                "roles"
+            ],
+            "time": "2017-04-05 15:25:18"
         },
         {
             "name": "jakub-onderka/php-console-color",
