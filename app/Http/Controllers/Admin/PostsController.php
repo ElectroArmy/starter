@@ -160,7 +160,7 @@ class PostsController extends Controller
 
         $user = auth()->user();
 
-        event(new PostWasCreated($post, $user));
+        event(new PostWasCreated($user, $post));
 
         flash()->success('Post Published', 'Your blog post has been published.');
 
