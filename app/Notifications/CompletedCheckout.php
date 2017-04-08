@@ -47,8 +47,8 @@ class CompletedCheckout extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('Thank you for completing store checkout, your download instructions will be emailed shortly.')
-                    ->line('We are Gamesstation, part of Ormrepo.');
+                    ->line('Thank you for completing the store checkout, your download instructions will be emailed shortly.')
+                    ->line('Gamesstation is part of Ormrepo.');
     }
 
     /**
