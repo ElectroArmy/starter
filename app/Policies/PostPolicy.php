@@ -38,7 +38,20 @@ class PostPolicy
      * @param  \App\Post  $post
      * @return bool
      */
-    public function create(User $user, Post $post)
+    public function update(User $user, Post $post)
+    {
+        return $user->id === $post->user_id;
+    }
+
+
+    /**
+     * Determine if the given post can be deleted by the user.
+     *
+     * @param  \App\User  $user
+     * @param  \App\Post  $post
+     * @return bool
+     */
+    public function delete(User $user, Post $post)
     {
         return $user->id === $post->user_id;
     }

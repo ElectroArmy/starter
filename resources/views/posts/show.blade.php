@@ -27,7 +27,7 @@
 
                 <div class="tag-box">
                     @unless($post->tags->isEmpty())
-                        <h2 class="side-heading">Tags:</h2>
+                        <h2 class="sidebar-title">Tags:</h2>
                         <ul class="tag--centre">
                             @foreach($post->tags as $tag)
                                 <a href="{{ url('/posts', $post->id) }}"><i class="fa fa-tag" aria-hidden="true"></i>

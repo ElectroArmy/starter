@@ -11,23 +11,30 @@
                <h4 class="leader">Edit {{ $post->title }}</h4>
             </div>
 
-            @is('admin')
+
                 <div class="row">
-                    {!! Form::model($post, array('route' => array('admin.posts.update', $post->id), 'method' => 'PUT')) !!}
-                    @include('admin.posts.form', ['submitButtonText' => 'Update'])
-                    {!! Form::close() !!}
+                    @can('update', $post)
+                        {!! Form::model($post, array('route' => array('admin.posts.update', $post->id), 'method' => 'PUT')) !!}
+                        @include('admin.posts.form', ['submitButtonText' => 'Update'])
+                        {!! Form::close() !!}
+                    @endcan
+
+                    @cannot('update', $post)
+                            <h3 class="is--black is--centre">'You do not have the required permissions to update this blog'</h3>
+
+                    @endcannot
+
                 </div>
                 <div class="row">
-                    <div class="button-center">
-                        {!! delete_form(['admin.posts.destroy', $post->id]) !!}
-                    </div><!-- /.button-center -->
-
+                    @can('delete', $post)
+                        <div class="button-center">
+                            {!! delete_form(['admin.posts.destroy', $post->id]) !!}
+                        </div><!-- /.button-center -->
+                    @endcan
                 </div><!-- /.row -->
-            @else
-                <br>
-                <h3 class="is--black is--centre">'You do not have the required permissions to edit this blog'</h3>
-                <br>
-            @endis
+
+
+
         </div><!-- /.register-fluid -->
     </div><!-- /.main-container -->
 
