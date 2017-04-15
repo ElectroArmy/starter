@@ -74,7 +74,7 @@
 
                 </div>
 
-                <div id="attid" style="display: none">
+                <div id="apple-pay-set-up-button apple-pay-setup-button-white-with-line" style="display: none">
                     <li><a href="http://www.apple.com/uk/privacy/" class="terms-link">Apple Pay Terms and Conditions</a></li>
                 </div><!-- /.apple-link -->
 
