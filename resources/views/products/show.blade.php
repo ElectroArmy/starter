@@ -45,7 +45,7 @@
                         data-shipping-address=true
                         data-label="Buy £{{ $product->price }}"
                         data-description="{{ $product->name }}"
-                        data-amount="{{ $product->price }}"
+                        data-amount="{{ $product->price * 100 }}"
                         data-currency="gbp">
                 </script>
                 {!! Form::close() !!}
@@ -73,9 +73,8 @@
                 <div class="apple-pay-set-up-button apple-pay-setup-button-white-with-line" style="display:none">
 
                 </div>
-                <div id="attid" style="display:none;">Show/Hide this text</div>
 
-                <div class="apple-link">
+                <div id="attid" style="display: none">
                     <li><a href="http://www.apple.com/uk/privacy/" class="terms-link">Apple Pay Terms and Conditions</a></li>
                 </div><!-- /.apple-link -->
 
