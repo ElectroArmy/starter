@@ -35,7 +35,10 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $e)
     {
-
+        //app('sneaker')->captureException($e);
+        if ($this->shouldReport($e)) {
+            app('sneaker')->captureException($e);
+        }
         return parent::report($e);
     }
 

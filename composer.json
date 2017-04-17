@@ -18,7 +18,8 @@
         "pda/pheanstalk": "~3.0",
         "propaganistas/laravel-phone": "^2.8",
         "pusher/pusher-php-server": "^2.6",
-        "roumen/feed": "^2.10"
+        "roumen/feed": "^2.10",
+        "squareboat/sneaker": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

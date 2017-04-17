@@ -175,6 +175,7 @@ return [
         Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
         HttpOz\Roles\RolesServiceProvider::class,
+        SquareBoat\Sneaker\SneakerServiceProvider::class,
 
         /*
          * Application Service Providers...
