@@ -38,7 +38,7 @@ return [
     */
 
     'to' => [
-        // 'hello@example.com',
+         'ormrepo@gmail.com',
     ],
 
     /*
