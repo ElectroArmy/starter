@@ -82,10 +82,10 @@ Route::resource('products', 'ProductsController');
 Route::get('products/download/{id}', ['uses' => 'ProductsController@download']);
 
 # Cart
-Route::post('cart/store', 'CartController@store');
-Route::get('cart', 'CartController@index');
-Route::get('cart/remove/{id}', 'CartController@remove');
-Route::post('cart/complete', ['as' => 'cart.complete', 'uses' => 'CartController@complete']);
+Route::post('cart/store', 'CartController@store')->middleware('auth');
+Route::get('cart', 'CartController@index')->middleware('auth');
+Route::get('cart/remove/{id}', 'CartController@remove')->middleware('auth');
+Route::post('cart/complete', ['as' => 'cart.complete', 'uses' => 'CartController@complete'])->middleware('auth');
 
 
 # Checkout
