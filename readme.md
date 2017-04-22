@@ -1,6 +1,7 @@
 Synopsis
 
-This is an ecommerce appplication that enables users to purchase game keys for use on any platform.
+This is the code source before Stripe Apple Web pay was integrated and it is the base project to use before you integrate apple pay in to your web application.
+This is an e-commerce site that is designed to take payments using stripe for Apple pay. It has a community notice board, social media log on integration, an activities log and much more.
 
 Motivation
 
